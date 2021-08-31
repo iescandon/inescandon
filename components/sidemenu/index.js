@@ -21,7 +21,7 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
                     className={`mb-8 cursor-pointer rounded shadow-lg ${
                       i === selectedProjectIndex
                         ? "border-2 border-coolBlue"
-                        : ""
+                        : "border border-platinum"
                     }`}
                     src={item.image.src[0]}
                     alt={image.alt}

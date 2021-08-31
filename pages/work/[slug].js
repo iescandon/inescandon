@@ -38,7 +38,7 @@ export default function WorkPage({ slug, title, description, image }) {
               // return(<Image src={url} alt={image.alt} height="200px" width="500px"></Image>)
             })}
           </div> */}
-          <img className="rounded-md shadow-lg mt-5" key={slug} src={image.src[0]} alt={image.alt} width="500px"></img>
+          <img className="rounded-md shadow-lg mt-5 border border-platinum" key={slug} src={image.src[0]} alt={image.alt} width="500px"></img>
         </section>
       </main>
     </>
