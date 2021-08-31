@@ -7,7 +7,8 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
     <>
       <aside className="p-5 relative md:fixed w-full md:w-3/12 min-h-screen overflow-auto inset-0">
         <Link href="/">
-          <a className="mt-3 text-4xl hover:text-coolBlue">&#x2190;</a>
+          {/* <a className="mt-3 text-4xl hover:text-goldenrod">&#x2190;</a> */}
+          <a className="mt-3 text-4xl"><i className="fa fa-arrow-circle-left text-coolBlue hover:text-goldenrod"></i></a>
         </Link>
         <ul className="mt-4">
           {work.map((item, i) => {

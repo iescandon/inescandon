@@ -20,16 +20,20 @@ body {
   color: #333333;
 } */
 
-.fa {
-  font-size: 20px;
+.fa-linkedin,
+.fa-github,
+.fa-instagram {
+  font-size: 24px;
   color: white;
   background-color: #0d98ba;
-  padding: 5px 7px;
+  padding: 4px 6px;
   border-radius: 25%;
 }
 
-.fa:hover {
-  font-size: 20px;
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-instagram:hover {
+  /* font-size: 20px; */
 }
 
 span {
@@ -37,6 +41,50 @@ span {
   /* background-color: gold; */
   /* padding-left: 5px; */
   /* padding-right: 5px; */
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #0d98ba;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text:hover {
+  background-color: #FFD700;
 }
 
 #menu-image {
@@ -47,15 +95,16 @@ span {
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    @apply border-2 border-goldenrod;
 }
 
 #project-image {
   @apply border border-platinum;
 }
 
-#project-image:hover {
+/* #project-image:hover {
   @apply border-2 border-goldenrod;
-}
+} */
 
 #section-nav:hover {
   @apply text-goldenrod;
@@ -69,3 +118,7 @@ a {
 * {
   box-sizing: border-box;
 } */
+
+
+  /* background-color: #0d98ba; */
+  /* background-color: #FFD700; */
