@@ -122,6 +122,14 @@ span {
 #section-nav:hover {
   @apply text-goldenrod;
 }
+
+
+
+@media (max-width: 1023px) {
+  #nav-items {
+    align-self: flex-end;
+  }
+}
 /* 
 a {
   color: inherit;

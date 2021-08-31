@@ -28,9 +28,9 @@ export default function Home() {
           <div id="work" className="md:grid md:grid-cols-2">
             {/* <h1 className="mt-3 text-4xl">My Work</h1> */}
             {/* <p className="md:col-span-2 mb-5 md:my-10 text-4xl font-semibold">Check out my <span className="text-5xl font-medium font-dawningOfaNewDay">work</span></p> */}
-            <p className="md:col-span-2 mb-5 text-4xl font-semibold">Hola! My name is <span className="text-5xl font-medium font-dawningOfaNewDay">Inez</span>. I'm a Full Stack Web Developer based out of Houston, TX. <img src="/images/texas.png" alt="texas outline" height="30px" width="30px" className="inline pb-1"></img></p>
+            <p className="md:col-span-2 mb-5 text-4xl font-semibold">Hola! My name is <span className="text-5xl font-medium font-dawningOfaNewDay">Inez</span>. I'm a Full Stack Web Developer based out of Houston, TX. <img src="/images/texas.png" alt="texas icon" height="30px" width="30px" className="inline pb-1"></img></p>
             {/* <p className="md:col-span-2 mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque turpis lorem, ac dictum diam dignissim non. Proin gravida viverra dui vitae suscipit. Cras ac ullamcorper magna, eget auctor massa. Donec dictum tincidunt risus, quis finibus justo luctus eget. Aliquam lacus massa, blandit tincidunt felis eget, ullamcorper finibus purus. Vivamus euismod sem quis condimentum feugiat. Duis ornare malesuada ligula, id porta nisl finibus ut. Cras volutpat eu est eu porta. Integer hendrerit porta justo interdum vestibulum. Morbi sit amet tortor tellus.</p> */}
-            <img src="/images/houston.jpg" alt="texas outline" className="md:col-span-2 mb-10"></img>
+            <img src="/images/houston.jpg" alt="houston texas city skyline" className="w-full md:col-span-2 mb-10"></img>
             <hr className="my-3 text-coolBlue border-t-2 col-span-2"></hr>
             {work.map((item, i) => (
               <>

@@ -10,15 +10,16 @@ export default function SideNav({ selectedSection, setSelectedSection }) {
   ];
   return (
     <>
-      <aside className="p-5 relative lg:fixed w-full lg:w-3/12 lg:min-h-screen overflow-auto inset-0 flex flex-col items-center justify-between">
+      <aside className="p-5 relative lg:fixed w-full lg:w-3/12 lg:min-h-screen overflow-auto inset-0 flex lg:flex-col items-center justify-around">
+        <img src="/images/blue-logo.png" alt="blue logo for website" className="lg:hidden inline" height="50px;" width="50px;"></img>
         <img
-          className="lg:mt-5 rounded-full xs:w-2/3 md:w-1/6 lg:w-3/4 border-2 border-coolBlue"
+          className="lg:mt-5 rounded-full xs:w-2/3 md:w-1/6 lg:w-3/4 border-2 border-coolBlue hidden lg:block"
           src="/images/inez-pic-clean.png"
           alt="hispanic girl with curly hair and small yorkie dog"
         ></img>
-        <h1 className="mt-3 text-5xl font-dawningOfaNewDay">Inez Escandón</h1>
-        <h4 className="uppercase font-semibold">Full Stack Web Developer</h4>
-        <ul className="lg:mt-5 flex xs:flex-row lg:flex-col justify-center">
+        <h1 className="mt-3 text-5xl font-dawningOfaNewDay hidden lg:block">Inez Escandón</h1>
+        <h4 className="uppercase font-semibold hidden lg:block">Full Stack Web Developer</h4>
+        <ul className="lg:mt-3 flex xs:flex-row lg:flex-col" id="nav-items">
           {/* <ul className="mt-5"> */}
           {sections.map((item, i) => {
             return (
@@ -38,7 +39,7 @@ export default function SideNav({ selectedSection, setSelectedSection }) {
             );
           })}
         </ul>
-        <ul className="lg:mt-5 w-full flex flex-row justify-center">
+        <ul className="lg:mt-3 w-full flex flex-row justify-center hidden lg:flex">
           <li className="p-3 mx-1">
             <a href="https://www.linkedin.com/in/iescandon/" target="_blank">
               <i className="fa fa-linkedin hover:bg-goldenrod"></i>
