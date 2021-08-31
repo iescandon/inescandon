@@ -95,6 +95,11 @@ span {
   width: 100%;
 } */
 
+/* .logo {
+  font-size: 900px;
+  padding-left: 200px;
+} */
+
 #menu-image {
   transition: transform 0.5s ease;
 }
