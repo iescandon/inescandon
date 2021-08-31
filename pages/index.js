@@ -35,7 +35,7 @@ export default function Home() {
             {work.map((item, i) => (
               <>
               <div className="my-auto md:col-span-1">
-                <p className="uppercase mb-5 text-2xl font-semibold">{item.title}</p>
+                <p className="uppercase pt-3 my-5 md:pt-0 md:mt-0 md:mb-5 text-2xl font-semibold">{item.title}</p>
                 <p>{item.description}</p>
               </div>
               <div key={item.slug} className="p-5 my-5 md:col-span-1">
@@ -48,8 +48,8 @@ export default function Home() {
                     ></img>
                   <Link href={`/work/${item.slug}`}>
                     <div className="overlay rounded-md cursor-pointer ">
-                        <div class="middle">
-                        <div class="text rounded-md">See More</div>
+                        <div className="middle">
+                        <div className="text rounded-md">See More</div>
                     </div>
                     </div>
                   </Link>
