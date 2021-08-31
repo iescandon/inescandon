@@ -3,7 +3,7 @@ import Head from "next/head";
 import SideNav from "../components/sidenav";
 
 export default function AboutMe() {
-  const [selectedSection, setSelectedSection] = useState("about-me");
+  const [selectedSection, setSelectedSection] = useState("about");
   const lorem =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque turpis lorem, ac dictum diam dignissim non. Proin gravida viverra dui vitae suscipit. Cras ac ullamcorper magna, eget auctor massa. Donec dictum tincidunt risus, quis finibus justo luctus eget. Aliquam lacus massa, blandit tincidunt felis eget, ullamcorper finibus purus. Vivamus euismod sem quis condimentum feugiat. Duis ornare malesuada ligula, id porta nisl finibus ut. Cras volutpat eu est eu porta. Integer hendrerit porta justo interdum vestibulum. Morbi sit amet tortor tellus.";
   return (

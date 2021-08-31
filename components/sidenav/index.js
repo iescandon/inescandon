@@ -5,7 +5,7 @@ export default function SideNav({ selectedSection, setSelectedSection }) {
   const sections = [
     { name: "Work", slug: "work" },
     { name: "Resume", slug: "resume" },
-    { name: "About Me", slug: "about-me" },
+    { name: "About", slug: "about" },
     { name: "Contact", slug: "contact" },
   ];
   return (
