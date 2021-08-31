@@ -23,9 +23,9 @@ export default function Contact() {
           selectedSection={selectedSection}
           setSelectedSection={setSelectedSection}
         />
-        <section className="mt-10 p-10 w-full md:w-9/12 ml-auto">
+        <section className="md:mt-10 p-10 w-full lg:w-9/12 lg:ml-auto">
         <div id="contact">
-        <p className="uppercase mb-5 text-4xl font-semibold">Contact</p>
+        <p className="mb-5 text-4xl font-semibold">Let's <span className="text-5xl font-medium font-dawningOfaNewDay">link</span> up!</p>
         <div>{lorem}</div>
       </div>
         </section>

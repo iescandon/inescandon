@@ -8,7 +8,8 @@ module.exports = {
       coolBlue: '#0d98ba',
       offWhite: '#fbfbfb',
       platinum: '#E5E4E2',
-      goldenrod: '#f0b520'
+      goldenrod: '#FFD700'
+      // goldenrod: '#f0b520'
     },
     screens: {
       'xs': '375px',
