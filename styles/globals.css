@@ -24,12 +24,10 @@ body {
 }
 
 span {
-  line-height: 50%;
-  background-color: gold;
   /* color: white; */
-  /* color: gold; */
-  padding-left: 5px;
-  padding-right: 5px;
+  /* background-color: gold; */
+  /* padding-left: 5px; */
+  /* padding-right: 5px; */
 }
 
 #menu-image {
