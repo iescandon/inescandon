@@ -13,7 +13,7 @@ export default function SideNav({ selectedSection, setSelectedSection }) {
       <aside className="p-5 relative lg:fixed w-full lg:w-3/12 lg:min-h-screen overflow-auto inset-0 flex lg:flex-col items-center justify-around">
         <img src="/images/blue-logo.png" alt="blue logo for website" className="lg:hidden inline" height="50px;" width="50px;"></img>
         <img
-          className="lg:mt-5 rounded-full xs:w-2/3 md:w-1/6 lg:w-3/4 border-2 border-coolBlue hidden lg:block"
+          className="lg:mt-5 rounded-full xs:w-2/3 md:w-1/6 lg:w-3/5 border-2 border-coolBlue hidden lg:block"
           src="/images/inez-pic-clean.png"
           alt="hispanic girl with curly hair and small yorkie dog"
         ></img>
