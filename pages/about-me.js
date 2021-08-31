@@ -25,7 +25,8 @@ export default function AboutMe() {
         />
         <section className="md:mt-10 p-10 w-full lg:w-9/12 lg:ml-auto">
         <div id="about">
-        <p className="mb-5 text-4xl font-semibold">Hola! My name is <span className="text-5xl font-medium font-dawningOfaNewDay">Inez</span>. I'm a Full Stack Web Developer based out of Houston, TX.</p>
+        <p className="mb-5 text-4xl font-semibold">Get to know <span className="text-5xl font-medium font-dawningOfaNewDay">me</span></p>
+        {/* <p className="mb-5 text-4xl font-semibold">Hola! My name is <span className="text-5xl font-medium font-dawningOfaNewDay">Inez</span>. I'm a Full Stack Web Developer based out of Houston, TX.</p> */}
         <div>{lorem}</div>
       </div>
         </section>

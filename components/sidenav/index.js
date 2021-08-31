@@ -41,17 +41,17 @@ export default function SideNav({ selectedSection, setSelectedSection }) {
         <ul className="lg:mt-5 w-full flex flex-row justify-center">
           <li className="p-3 mx-1">
             <a href="https://www.linkedin.com/in/iescandon/" target="_blank">
-              <i className="fa fa-linkedin hover:text-coolBlue"></i>
+              <i className="fa fa-linkedin hover:bg-goldenrod"></i>
             </a>
           </li>
           <li className="p-3 mx-1">
             <a href="https://github.com/iescandon" target="_blank">
-              <i className="fa fa-github hover:text-coolBlue"></i>
+              <i className="fa fa-github hover:bg-goldenrod"></i>
             </a>
           </li>
           <li className="p-3 mx-1">
             <a href="https://www.instagram.com/inescandon/" target="_blank">
-              <i className="fa fa-instagram hover:text-coolBlue"></i>
+              <i className="fa fa-instagram hover:bg-goldenrod"></i>
             </a>
           </li>
         </ul>

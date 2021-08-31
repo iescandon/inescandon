@@ -11,6 +11,7 @@
 aside {
   @apply bg-offWhite;
 }
+
 /* 
 html,
 body {
@@ -20,6 +21,14 @@ body {
 } */
 
 .fa {
+  font-size: 20px;
+  color: white;
+  background-color: #0d98ba;
+  padding: 5px 7px;
+  border-radius: 25%;
+}
+
+.fa:hover {
   font-size: 20px;
 }
 
@@ -45,13 +54,12 @@ span {
 }
 
 #project-image:hover {
-  @apply border-2 border-coolBlue;
+  @apply border-2 border-goldenrod;
 }
 
 #section-nav:hover {
-  @apply bg-goldenrod;
+  @apply text-goldenrod;
 }
-
 /* 
 a {
   color: inherit;
