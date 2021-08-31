@@ -88,6 +88,13 @@ span {
   color: black;
 }
 
+/* .image_wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+} */
+
 #menu-image {
   transition: transform 0.5s ease;
 }

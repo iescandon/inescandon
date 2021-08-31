@@ -27,6 +27,7 @@ export default function Contact() {
         <div id="contact">
         <p className="mb-5 text-4xl font-semibold">Let's <span className="text-5xl font-medium font-dawningOfaNewDay">link</span> up!</p>
         <div>{lorem}</div>
+        <div>MAIL CHIMP CONTACT FORM</div>
       </div>
         </section>
       </main>
