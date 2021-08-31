@@ -85,6 +85,7 @@ span {
 
 .text:hover {
   background-color: #FFD700;
+  color: black;
 }
 
 #menu-image {
