@@ -29,8 +29,18 @@ export default function WorkPage({ slug, title, description, image, github, live
         <section className="p-10 w-full lg:w-9/12 ml-auto">
           <div className="flex flex-row mb-5 items-center">
           <p className="uppercase text-4xl font-semibold">{title}</p>
-          <a href={github} target="_blank"><i className="fab fa-github-square text-3xl ml-4 text-coolBlue hover:text-goldenrod"></i></a>
-          <a href={live_url} target="_blank"><i className="fas fa-external-link-square-alt text-3xl ml-2 text-coolBlue hover:text-goldenrod"></i></a>
+          <a href={github} target="_blank" tabindex={-1}><i className="fab fa-github-square text-3xl ml-4 text-coolBlue hover:text-goldenrod" tabindex={0} onKeyDown={(e)=>{
+                    if (e.key === "Enter" || "") {
+                      const page = github;
+                      window.location.href = page;
+                    }
+                  }}></i></a>
+          <a href={live_url} target="_blank" tabindex={-1}><i className="fas fa-external-link-square-alt text-3xl ml-2 text-coolBlue hover:text-goldenrod" tabindex={0} onKeyDown={(e)=>{
+                    if (e.key === "Enter" || "") {
+                      const page = live_url;
+                      window.location.href = page;
+                    }
+                  }}></i></a>
           </div>
           <div>{description}</div>
           <img className="rounded-md shadow-lg mt-5 border border-platinum w-full" key={slug} src={image.src[0]} alt={image.alt}></img>
