@@ -29,13 +29,13 @@ export default function WorkPage({ slug, title, description, image, github, live
         <section className="p-10 w-full lg:w-9/12 ml-auto">
           <div className="flex flex-row mb-5 items-center">
           <p className="uppercase text-4xl font-semibold">{title}</p>
-          <a href={github} target="_blank" tabIndex={-1}><i className="fab fa-github-square text-3xl ml-4 text-coolBlue hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
+          <a href={github} target="_blank" rel="noreferrer" tabIndex={-1}><i className="fab fa-github-square text-3xl ml-4 text-coolBlue hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
                     if (e.key === "Enter" || "") {
                       const page = github;
                       window.location.href = page;
                     }
                   }}></i></a>
-          <a href={live_url} target="_blank" tabIndex={-1}><i className="fas fa-external-link-square-alt text-3xl ml-2 text-coolBlue hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
+          <a href={live_url} target="_blank" rel="noreferrer" tabIndex={-1}><i className="fas fa-external-link-square-alt text-3xl ml-2 text-coolBlue hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
                     if (e.key === "Enter" || "") {
                       const page = live_url;
                       window.location.href = page;

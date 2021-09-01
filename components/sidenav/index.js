@@ -42,7 +42,7 @@ export default function SideNav({ selectedSection }) {
         </ul>
         <ul className="lg:mt-3 w-full flex flex-row justify-center hidden lg:flex">
           <li className="text-3xl mx-4">
-            <a href="https://github.com/iescandon" target="_blank" tabIndex={-1}>
+            <a href="https://github.com/iescandon" target="_blank" rel="noreferrer" tabIndex={-1}>
               <i className="fab fa-github-square text-coolBlue hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
                     if (e.key === "Enter" || "") {
                       window.location.href = "https://github.com/iescandon";
@@ -51,7 +51,7 @@ export default function SideNav({ selectedSection }) {
             </a>
           </li>
           <li className="text-3xl mx-4">
-            <a href="https://www.linkedin.com/in/iescandon/" target="_blank" tabIndex={-1}>
+            <a href="https://www.linkedin.com/in/iescandon/" target="_blank" rel="noreferrer" tabIndex={-1}>
               <i className="fab fa-linkedin text-coolBlue hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
                     if (e.key === "Enter" || "") {
                       window.location.href = "https://www.linkedin.com/in/iescandon/";
@@ -60,7 +60,7 @@ export default function SideNav({ selectedSection }) {
             </a>
           </li>
           <li className="text-3xl mx-4">
-            <a href="https://www.instagram.com/inescandon/" target="_blank" tabIndex={-1}>
+            <a href="https://www.instagram.com/inescandon/" target="_blank" rel="noreferrer" tabIndex={-1}>
               <i className="fab fa-instagram-square text-coolBlue hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
                     if (e.key === "Enter" || "") {
                       window.location.href = "https://www.instagram.com/inescandon/";
