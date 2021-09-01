@@ -49,7 +49,7 @@ export default function Home() {
                   <Link href={`/work/${item.slug}`}>
                     <div className="overlay rounded-md cursor-pointer">
                         <div className="middle">
-                        <div className="text rounded-md">See More</div>
+                        <div className="text rounded-md transition duration-300 ease-in-out">See More</div>
                     </div>
                     </div>
                   </Link>

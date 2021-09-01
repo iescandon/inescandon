@@ -6,7 +6,7 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
   return (
       <aside className="border-b lg:border-r border-silver p-5 relative lg:fixed w-full lg:w-3/12 lg:min-h-screen overflow-auto inset-0 shadow-lg">
         <Link href="/">
-          <a tabIndex={-1} className="mt-3 text-4xl"><i tabIndex={0} className="fas fa-arrow-circle-left text-coolBlue hover:text-goldenrod" onKeyDown={(e)=>{
+          <a tabIndex={-1} className="mt-3 text-4xl"><i tabIndex={0} className="transition duration-300 ease-in-out fas fa-arrow-circle-left text-coolBlue hover:text-goldenrod" onKeyDown={(e)=>{
                     if (e.key === "Enter" || "") {
                       window.location.href = "/";
                     }

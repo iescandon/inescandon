@@ -13,9 +13,9 @@
   
 }
 
-/* a {
+a {
   transition: color 0.1s linear;
-} */
+}
 
 aside {
   @apply bg-offWhite;
