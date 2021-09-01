@@ -39,7 +39,7 @@ export default function Home() {
                       className="rounded-md shadow-lg w-full image"
                       src={item.image.src[0]}
                       alt={item.image.alt}
-                      tabindex={0}
+                      tabIndex={0}
                       onKeyDown={(e)=>{
                       if (e.key === "Enter" || "") {
                       window.location.href = `/work/${item.slug}`;

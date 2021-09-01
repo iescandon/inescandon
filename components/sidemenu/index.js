@@ -6,7 +6,7 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
   return (
       <aside className="border-b lg:border-r border-silver p-5 relative lg:fixed w-full lg:w-3/12 lg:min-h-screen overflow-auto inset-0 shadow-lg">
         <Link href="/">
-          <a tabindex={-1} className="mt-3 text-4xl"><i tabindex={0} className="fas fa-arrow-circle-left text-coolBlue hover:text-goldenrod" onKeyDown={(e)=>{
+          <a tabIndex={-1} className="mt-3 text-4xl"><i tabIndex={0} className="fas fa-arrow-circle-left text-coolBlue hover:text-goldenrod" onKeyDown={(e)=>{
                     if (e.key === "Enter" || "") {
                       window.location.href = "/";
                     }
@@ -31,7 +31,7 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
                     onClick={() => {
                       setSelectedProjectIndex(i);
                     }}
-                    tabindex={0}
+                    tabIndex={0}
                     onKeyDown={(e)=>{
                     if (e.key === "Enter" || "") {
                       window.location.href = `/work/${item.slug}`;
