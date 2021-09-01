@@ -32,7 +32,6 @@ function MyForm() {
       });
   };
   return (
-
       <form className="flex flex-col focus:outline-goldenrod" onSubmit={handleOnSubmit}>
         <label className="mt-5" htmlFor="name">Name:</label>
         <input className="border border-platinum rounded" id="name" type="name" name="name" required />
@@ -40,7 +39,7 @@ function MyForm() {
         <input className="border border-platinum rounded" id="email" type="email" name="email" required />
         <label className="mt-5" htmlFor="message">Message:</label>
         <textarea className="border border-platinum rounded" id="message" name="message"></textarea>
-        <button className="mt-10 text-white bg-coolBlue hover:bg-goldenrod hover:text-black rounded flex-end w-" type="submit" disabled={serverState.submitting}>
+        <button className="self-end p-3 mt-10 text-white bg-coolBlue hover:bg-goldenrod hover:text-black rounded w-1/4 md:w-1/6" type="submit" disabled={serverState.submitting}>
           Submit
         </button>
         {serverState.status && (

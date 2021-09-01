@@ -11,6 +11,7 @@ module.exports = {
       },
       colors: {
         coolBlue: '#0d98ba',
+        lightBlue: '#bfdce8',
         offWhite: '#fbfbfb',
         // offWhite: '#f8f8f8',
         // silver: '#f6f6f6',

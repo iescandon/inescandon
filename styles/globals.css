@@ -17,15 +17,13 @@ aside {
   @apply bg-offWhite;
 }
 
-.fa-linkedin,
-.fa-github,
-.fa-instagram {
+/* .footer-icons {
   font-size: 24px;
   color: white;
   background-color: #0d98ba;
   padding: 4px 6px;
   border-radius: 25%;
-}
+} */
 
 .container {
   position: relative;
