@@ -3,10 +3,9 @@ import { useState } from "react";
 import SideNav from "../components/sidenav";
 import { work } from "../lib/data.js";
 import Link from "next/link";
+import Layout from '../components/layout';
 
 export default function Home() {
-  const [selectedSection, setSelectedSection] = useState("work");
-
   return (
     <>
       <Head>
@@ -18,20 +17,15 @@ export default function Home() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         ></link>
       </Head>
-
-      <main className="relative">
-        <SideNav
-          selectedSection={selectedSection}
-          setSelectedSection={setSelectedSection}
-        />
+      <Layout
+          isWork={false}
+          selectedSection={"work"}
+        >
         <section className="p-10 w-full lg:w-9/12 lg:ml-auto">
           <div id="work" className="md:grid md:grid-cols-2">
-            {/* <h1 className="mt-3 text-4xl">My Work</h1> */}
-            {/* <p className="md:col-span-2 mb-5 md:my-10 text-4xl font-semibold">Check out my <span className="text-5xl font-medium font-dawningOfaNewDay">work</span></p> */}
             <p className="md:col-span-2 mb-5 text-4xl font-semibold">Hola! My name is <span className="text-5xl font-medium font-dawningOfaNewDay">Inez</span>. I'm a Full Stack Web Developer based out of Houston, TX. <img src="/images/texas.png" alt="texas icon" height="30px" width="30px" className="inline pb-1"></img></p>
-            {/* <p className="md:col-span-2 mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque turpis lorem, ac dictum diam dignissim non. Proin gravida viverra dui vitae suscipit. Cras ac ullamcorper magna, eget auctor massa. Donec dictum tincidunt risus, quis finibus justo luctus eget. Aliquam lacus massa, blandit tincidunt felis eget, ullamcorper finibus purus. Vivamus euismod sem quis condimentum feugiat. Duis ornare malesuada ligula, id porta nisl finibus ut. Cras volutpat eu est eu porta. Integer hendrerit porta justo interdum vestibulum. Morbi sit amet tortor tellus.</p> */}
             <img src="/images/houston.jpg" alt="houston texas city skyline" className="w-full md:col-span-2 mb-10"></img>
-            <hr className="my-3 text-coolBlue border-t-2 col-span-2"></hr>
+            <hr className="my-3 border-coolBlue border-t-2 col-span-2"></hr>
             {work.map((item, i) => (
               <>
               <div className="my-auto md:col-span-1">
@@ -55,14 +49,13 @@ export default function Home() {
                   </Link>
   
                 </div>
-                {/* <button className="bg-yellow-300 absolute right-12">See More</button> */}
               </div>
               {i + 1 !== work.length ? <hr className="my-3 text-platinum col-span-2"></hr> : null }
               </>
             ))}
           </div>
         </section>
-      </main>
+      </Layout>
     </>
   );
 }

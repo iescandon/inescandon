@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function SideNav({ selectedSection, setSelectedSection }) {
+export default function SideNav({ selectedSection }) {
   const sections = [
     { name: "Work", slug: "work" },
     { name: "Resume", slug: "resume" },
@@ -9,18 +9,16 @@ export default function SideNav({ selectedSection, setSelectedSection }) {
     { name: "Contact", slug: "contact" },
   ];
   return (
-    <>
-      <aside className="p-5 relative lg:fixed w-full lg:w-3/12 lg:min-h-screen overflow-auto inset-0 flex lg:flex-col items-center justify-around">
-        <img src="/images/blue-logo.png" alt="blue logo for website" className="lg:hidden inline" height="50px;" width="50px;"></img>
+      <aside id="sidenav" className="border-b lg:border-r border-silver p-5 relative lg:fixed w-full lg:w-3/12 lg:min-h-screen overflow-auto inset-0 flex lg:flex-col items-center justify-center text-center shadow-md lg:shadow-lg">
+        <img id="logo" src="/images/blue-logo.png" alt="blue logo for website" className="lg:hidden inline" height="50px;" width="50px;"></img>
         <img
-          className="lg:mt-5 rounded-full xs:w-2/3 md:w-1/6 lg:w-3/5 border-2 border-coolBlue hidden lg:block"
+          className="rounded-full w-2/3 md:w-1/6 lg:w-3/5 border-2 border-coolBlue hidden lg:block"
           src="/images/inez-pic-clean.png"
           alt="hispanic girl with curly hair and small yorkie dog"
         ></img>
-        <h1 className="mt-3 text-5xl font-dawningOfaNewDay hidden lg:block">Inez Escandón</h1>
-        <h4 className="uppercase font-semibold hidden lg:block">Full Stack Web Developer</h4>
-        <ul className="lg:mt-3 flex xs:flex-row lg:flex-col" id="nav-items">
-          {/* <ul className="mt-5"> */}
+        <h1 className="mt-3 text-5xl font-dawningOfaNewDay hidden lg:block my-name">Inez Escandón</h1>
+        <h4 className="uppercase font-semibold hidden lg:block role">Full Stack Web Developer</h4>
+        <ul className="lg:mt-3 flex flex-row lg:flex-col" id="nav-items">
           {sections.map((item, i) => {
             return (
               <Link key={item.slug} href={i === 0 ? "/" : item.slug}>
@@ -29,9 +27,6 @@ export default function SideNav({ selectedSection, setSelectedSection }) {
                   className={`p-2 cursor-pointer my-2 text-center ${
                     item.slug === selectedSection ? "text-coolBlue" : ""
                   }`}
-                  onClick={() => {
-                    setSelectedSection(item.slug);
-                  }}
                 >
                   {item.name}
                 </li>
@@ -57,8 +52,5 @@ export default function SideNav({ selectedSection, setSelectedSection }) {
           </li>
         </ul>
       </aside>
-    </>
   );
 }
-
-// bg-coolBlue p-3 rounded-md
