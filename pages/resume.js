@@ -25,7 +25,7 @@ export default function Resume() {
           <div id="resume">
             <p className="mb-5 text-4xl font-semibold">Check out my <span className="text-5xl font-medium font-dawningOfaNewDay">resume</span></p>
             <div>{lorem}</div>
-            <div>DOWNDLOAD RESUME BUTTON</div>
+            {/* <div>DOWNDLOAD RESUME BUTTON</div> */}
           </div>
         </section>
       </Layout>
