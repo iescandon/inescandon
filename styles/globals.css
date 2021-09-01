@@ -13,6 +13,10 @@
   
 }
 
+/* a {
+  transition: color 0.1s linear;
+} */
+
 aside {
   @apply bg-offWhite;
 }
@@ -28,6 +32,11 @@ aside {
 .container {
   position: relative;
   width: 50%;
+}
+
+.inez {
+  top: -2px;
+  position: absolute;
 }
 
 .image {
@@ -111,11 +120,8 @@ aside {
 
 @media (max-width: 480px) {
   #nav-items li {
-    margin-left: 2.5px;
-  }
-  img#logo {
-    height: 40px;
-    width: 40px;
+    margin-left: 2px;
+    font-size: 14px;
   }
 }
 
