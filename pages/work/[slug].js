@@ -26,7 +26,7 @@ export default function WorkPage({ slug, title, description, image, github, live
         ></link>
       </Head>
         <Layout isWork={true} selectedProjectIndex={selectedProjectIndex} setSelectedProjectIndex={setSelectedProjectIndex} image={image}>
-        <section className="p-10 w-full md:w-9/12 ml-auto">
+        <section className="p-10 w-full lg:w-9/12 ml-auto">
           <div className="flex flex-row mb-5 items-center">
           <p className="uppercase text-4xl font-semibold">{title}</p>
           <a href={github} target="_blank"><i className="fab fa-github-square text-3xl ml-4 text-coolBlue hover:text-goldenrod"></i></a>

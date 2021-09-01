@@ -4,7 +4,7 @@ import { work } from "../../lib/data";
 
 export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex, image}) {
   return (
-      <aside className="border-b lg:border-r border-silver p-5 relative md:fixed w-full md:w-3/12 min-h-screen overflow-auto inset-0 shadow-lg">
+      <aside className="border-b lg:border-r border-silver p-5 relative lg:fixed w-full lg:w-3/12 lg:min-h-screen overflow-auto inset-0 shadow-lg">
         <Link href="/">
           <a tabindex={-1} className="mt-3 text-4xl"><i tabindex={0} className="fas fa-arrow-circle-left text-coolBlue hover:text-goldenrod"                     onKeyDown={(e)=>{
                     if (e.key === "Enter" || "") {
@@ -12,7 +12,7 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
                     }
                   }}></i></a>
         </Link>
-        <ul className="mt-4">
+        <ul className="mt-4 hidden lg:block">
           {work.map((item, i) => {
             return (
               <Link href={`/work/${item.slug}`} key={item.title}>
