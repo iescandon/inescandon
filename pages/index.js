@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <Layout
           isWork={false}
-          selectedSection={"work"}
+          selectedSection={""}
         >
         <section className="p-10 w-full lg:w-9/12 lg:ml-auto">
           <div id="work" className="md:grid md:grid-cols-2">
@@ -39,15 +39,20 @@ export default function Home() {
                       className="rounded-md shadow-lg w-full image"
                       src={item.image.src[0]}
                       alt={item.image.alt}
+                      tabindex={0}
+                      onKeyDown={(e)=>{
+                      if (e.key === "Enter" || "") {
+                      window.location.href = `/work/${item.slug}`;
+                    }
+                  }}
                     ></img>
                   <Link href={`/work/${item.slug}`}>
-                    <div className="overlay rounded-md cursor-pointer ">
+                    <div className="overlay rounded-md cursor-pointer">
                         <div className="middle">
                         <div className="text rounded-md">See More</div>
                     </div>
                     </div>
                   </Link>
-  
                 </div>
               </div>
               {i + 1 !== work.length ? <hr className="my-3 text-platinum col-span-2"></hr> : null }

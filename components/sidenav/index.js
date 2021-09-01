@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function SideNav({ selectedSection }) {
   const sections = [
-    { name: "Work", slug: "work" },
+    { name: "Work", slug: "" },
     { name: "Resume", slug: "resume" },
     { name: "About", slug: "about" },
     { name: "Contact", slug: "contact" },
@@ -24,9 +24,15 @@ export default function SideNav({ selectedSection }) {
               <Link key={item.slug} href={i === 0 ? "/" : item.slug}>
                 <li
                   id="section-nav"
+                  tabIndex={0}
                   className={`p-2 cursor-pointer my-2 text-center ${
                     item.slug === selectedSection ? "text-coolBlue" : ""
                   }`}
+                  onKeyDown={(e)=>{
+                    if (e.key === "Enter" || "") {
+                      window.location.href = `/${item.slug}`;
+                    }
+                  }}
                 >
                   {item.name}
                 </li>

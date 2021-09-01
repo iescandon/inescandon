@@ -8,6 +8,11 @@
   @apply font-poppins;
 }
 
+*, :focus-visible {
+  outline-color: #FFD700;
+  
+}
+
 aside {
   @apply bg-offWhite;
 }

@@ -6,7 +6,11 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
   return (
       <aside className="border-b lg:border-r border-silver p-5 relative md:fixed w-full md:w-3/12 min-h-screen overflow-auto inset-0 shadow-lg">
         <Link href="/">
-          <a className="mt-3 text-4xl"><i className="fa fa-arrow-circle-left text-coolBlue hover:text-goldenrod"></i></a>
+          <a tabindex={-1} className="mt-3 text-4xl"><i tabindex={0} className="fa fa-arrow-circle-left text-coolBlue hover:text-goldenrod"                     onKeyDown={(e)=>{
+                    if (e.key === "Enter" || "") {
+                      window.location.href = "/";
+                    }
+                  }}></i></a>
         </Link>
         <ul className="mt-4">
           {work.map((item, i) => {
@@ -27,6 +31,12 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
                     onClick={() => {
                       setSelectedProjectIndex(i);
                     }}
+                    tabindex={0}
+                    onKeyDown={(e)=>{
+                    if (e.key === "Enter" || "") {
+                      window.location.href = `/work/${item.slug}`;
+                    }
+                  }}
                   ></img>
                 </li>
               </Link>
