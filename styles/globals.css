@@ -17,6 +17,10 @@ a {
   transition: color 0.1s linear;
 }
 
+input, textarea {
+  padding: 10px!important;
+}
+
 aside {
   @apply bg-offWhite;
 }
