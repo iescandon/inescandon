@@ -23,7 +23,7 @@ export default function Home() {
         >
         <section className="p-10 w-full lg:w-9/12 lg:ml-auto">
           <div id="work" className="md:grid md:grid-cols-2">
-            <p className="md:col-span-2 mb-5 text-4xl font-semibold">Hola! My name is <span className="text-5xl font-medium font-dawningOfaNewDay">Inez</span>. I'm a Full Stack Web Developer based out of Houston, TX. <img src="/images/texas.png" alt="texas icon" height="30px" width="30px" className="inline pb-1"></img></p>
+            <p className="md:col-span-2 mb-5 text-4xl font-semibold">Hola! My name is <span className="text-5xl font-medium font-dawningOfaNewDay pr-1">Inez</span>. I'm a Full Stack Web Developer based out of Houston, TX. <img src="/images/texas.png" alt="texas icon" height="30px" width="30px" className="inline pb-1"></img></p>
             <img src="/images/houston.jpg" alt="houston texas city skyline" className="w-full md:col-span-2 mb-10"></img>
             <hr className="my-3 border-coolBlue border-t-2 col-span-2"></hr>
             {work.map((item, i) => (
