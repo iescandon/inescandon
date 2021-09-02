@@ -18,7 +18,7 @@ export default function SideNav({ selectedSection }) {
         <Link href="/">
         <img
           className="transition duration-200 ease-in-out cursor-pointer rounded-full w-2/3 md:w-1/6 lg:w-3/5 border-2 border-coolBlue hover:border-goldenrod hidden lg:block"
-          src="/images/inez-pic-clean.png"
+          src="/images/inez-pic.png"
           alt="hispanic girl with curly hair and small yorkie dog"
         ></img>
         </Link>

@@ -25,7 +25,7 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
                         ? "border-2 border-coolBlue"
                         : "border border-platinum"
                     }`}
-                    src={item.image.src[0]}
+                    src={item.image.src}
                     alt={image.alt}
                     width="90%"
                     onClick={() => {

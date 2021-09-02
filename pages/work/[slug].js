@@ -7,7 +7,8 @@ import SideMenu from "../../components/sidemenu";
 import Layout from '../../components/layout';
 
 export default function WorkPage({ slug, title, description, image, github, live_url }) {
-  const [selectedProjectIndex, setSelectedProjectIndex] = useState()
+  console.log(image.gif);
+  const [selectedProjectIndex, setSelectedProjectIndex] = useState();
   useEffect(() => {
     work.map((item, i)=>{
       if (item.title === title) {
@@ -43,8 +44,11 @@ export default function WorkPage({ slug, title, description, image, github, live
                   }}></i></a>
           </div>
           <div>{description}</div>
+          {/* <a href={live_url} target="_blank" rel="noreferrer">
+            <img className="rounded-md shadow-lg mt-5 border border-platinum w-full" key={slug} src={image.src} alt={image.alt}></img>
+          </a> */}
           <a href={live_url} target="_blank" rel="noreferrer">
-            <img className="rounded-md shadow-lg mt-5 border border-platinum w-full" key={slug} src={image.src[0]} alt={image.alt}></img>
+            <img className="rounded-md shadow-lg mt-5 border border-platinum w-full" key={slug} src={image.gif} alt={image.alt}></img>
           </a>
           </section>
         </Layout>

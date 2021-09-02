@@ -37,7 +37,7 @@ export default function Home() {
                     <img
                       id="project-image"
                       className="rounded-md shadow-lg w-full image"
-                      src={item.image.src[0]}
+                      src={item.image.src}
                       alt={item.image.alt}
                       tabIndex={0}
                       onKeyDown={(e)=>{
