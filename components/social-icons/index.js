@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 export default function SocialIcons({isNav}) {
-// console.log(isMobile)
 return (
   <>
   { isNav ?
