@@ -44,12 +44,14 @@ export default function WorkPage({ slug, title, description, image, github, live
                   }}></i></a>
           </div>
           <div>{description}</div>
-          {/* <a href={live_url} target="_blank" rel="noreferrer">
-            <img className="rounded-md shadow-lg mt-5 border border-platinum w-full" key={slug} src={image.src} alt={image.alt}></img>
-          </a> */}
+          { image.gif ? 
           <a href={live_url} target="_blank" rel="noreferrer">
             <img className="rounded-md shadow-lg mt-5 border border-platinum w-full" key={slug} src={image.gif} alt={image.alt}></img>
+          </a> :
+          <a href={live_url} target="_blank" rel="noreferrer">
+            <img className="rounded-md shadow-lg mt-5 border border-platinum w-full" key={slug} src={image.src} alt={image.alt}></img>
           </a>
+          }
           </section>
         </Layout>
     </>
