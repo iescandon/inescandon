@@ -12,8 +12,8 @@ export default function SideNav({ selectedSection }) {
   return (
       <aside id="sidenav" className="border-b lg:border-r border-silver p-5 relative lg:fixed w-full lg:w-3/12 lg:min-h-screen overflow-auto inset-0 flex lg:flex-col items-center justify-center text-center shadow-md lg:shadow-lg">
         <Link href="/">
-        <p className="transition duration-300 ease-in-out cursor-pointer inez pl-2 font-dawningOfaNewDay font-extrabold text-coolBlue hover:text-goldenrod text-7xl lg:hidden">ie</p>
-        {/* <img id="logo" src="/images/blue-logo.png" alt="blue logo for website" className="cursor-pointer lg:hidden inline" height="50px;" width="50px;"></img> */}
+        {/* <p className="transition duration-300 ease-in-out cursor-pointer inez pl-2 font-dawningOfaNewDay font-extrabold text-coolBlue hover:text-goldenrod text-7xl lg:hidden">ie</p> */}
+        <img id="logo" src="/images/blue-logo.png" alt="blue logo for website" className="cursor-pointer lg:hidden inline" height="50px;" width="50px;"></img>
         </Link>
         <Link href="/">
         <img
