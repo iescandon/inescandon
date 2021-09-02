@@ -18,7 +18,7 @@ export default function WorkPage({ slug, title, description, image, github, live
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>Inez Escandón | {title}</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"

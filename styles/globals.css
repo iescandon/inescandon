@@ -96,10 +96,10 @@ aside {
 #project-image {
   @apply border border-platinum;
 }
-
+/* 
 #section-nav:hover {
   @apply text-goldenrod;
-}
+} */
 
 
 

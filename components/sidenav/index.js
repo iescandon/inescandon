@@ -31,7 +31,7 @@ export default function SideNav({ selectedSection }) {
                 <li
                   id="section-nav"
                   tabIndex={0}
-                  className={`p-2 cursor-pointer my-2 text-center transition duration-300 ease-in-out ${
+                  className={`p-2 cursor-pointer my-2 text-center hover:text-goldenrod md:transition md:duration-300 md:ease-in-out ${
                     item.slug === selectedSection ? "text-coolBlue" : ""
                   }`}
                   onKeyDown={(e)=>{
@@ -47,7 +47,7 @@ export default function SideNav({ selectedSection }) {
           })}
         </ul>
         <ul className="lg:mt-3 w-full lg:flex-row justify-center hidden lg:flex">
-          <SocialIcons />
+          <SocialIcons isNav={true}/>
         </ul>
       </aside>
   );
