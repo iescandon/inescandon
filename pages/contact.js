@@ -3,6 +3,7 @@ import Head from "next/head";
 import SideNav from "../components/sidenav";
 import Layout from '../components/layout';
 import ContactForm from '../components/contact-form';
+import SocialIcons from '../components/social-icons';
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
@@ -29,10 +30,46 @@ export default function Contact() {
       >
         <section className="p-10 w-full lg:w-9/12 lg:ml-auto">
           <div id="contact">
-            <p className="mb-5 text-4xl font-semibold">Let's <span className="text-5xl font-medium font-dawningOfaNewDay">link</span> up!</p>
+          <p className="mb-5 text-4xl font-semibold">Let's <span className="text-5xl font-medium font-dawningOfaNewDay">link</span> up!</p>
+          {/* <div className="flex flex-row lg:block">
+            <p className="inline mb-5 text-4xl font-semibold">Let's <span className="text-5xl font-medium font-dawningOfaNewDay">link</span> up!</p>
+            <ul className="ml-2 pt-2 flex flex-row lg:hidden inline">
+              <SocialIcons />
+            </ul>
+          </div> */}
             <div>{lorem}</div>
             <ContactForm />
           </div>
+          <ul className="ml-2 pt-10 flex flex-row lg:hidden inline justify-center">
+            {/* <SocialIcons /> */}
+                      <li className="text-3xl mx-4">
+            <a href="https://github.com/iescandon" target="_blank" rel="noreferrer" tabIndex={-1}>
+              <i className="transition duration-300 ease-in-out fab fa-github hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
+                    if (e.key === "Enter" || "") {
+                      window.location.href = "https://github.com/iescandon";
+                    }
+                  }}></i>
+            </a>
+          </li>
+          <li className="text-3xl mx-4">
+            <a href="https://www.linkedin.com/in/iescandon/" target="_blank" rel="noreferrer" tabIndex={-1}>
+              <i className="transition duration-300 ease-in-out fab fa-linkedin-in hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
+                    if (e.key === "Enter" || "") {
+                      window.location.href = "https://www.linkedin.com/in/iescandon/";
+                    }
+                  }}></i>
+            </a>
+          </li>
+          <li className="text-3xl mx-4">
+            <a href="https://www.instagram.com/inescandon/" target="_blank" rel="noreferrer" tabIndex={-1}>
+              <i className="transition duration-300 ease-in-out fab fa-instagram hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
+                    if (e.key === "Enter" || "") {
+                      window.location.href = "https://www.instagram.com/inescandon/";
+                    }
+                  }}></i>
+            </a>
+          </li>
+          </ul>
         </section>
       </Layout>
     </>
