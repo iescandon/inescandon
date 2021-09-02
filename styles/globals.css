@@ -123,6 +123,9 @@ aside {
     margin-left: 2px;
     font-size: 14px;
   }
+  .text {
+    padding: 12px 20px;
+  }
 }
 
 @media (max-width: 1208px) {
