@@ -10,21 +10,21 @@ export default function SideNav({ selectedSection }) {
     { name: "Contact", slug: "contact" },
   ];
   return (
-      <aside id="sidenav" className="border-b lg:border-r border-silver p-5 relative lg:fixed w-full lg:w-3/12 lg:min-h-screen overflow-auto inset-0 flex lg:flex-col items-center justify-center text-center shadow-md lg:shadow-lg">
+      <aside id="sidenav" className="relative inset-0 flex items-center justify-center w-full p-5 overflow-auto text-center border-b shadow-md lg:border-r border-silver lg:fixed lg:w-3/12 lg:min-h-screen lg:flex-col lg:shadow-lg">
         <Link href="/">
-        {/* <p className="transition duration-200 ease-in-out cursor-pointer inez pl-2 font-dawningOfaNewDay font-extrabold text-coolBlue hover:text-goldenrod text-7xl lg:hidden">ie</p> */}
-        <img id="logo" src="/images/blue-logo.png" alt="blue logo for website" className="cursor-pointer lg:hidden inline" height="50px;" width="50px;"></img>
+        {/* <p className="pl-2 font-extrabold transition duration-200 ease-in-out cursor-pointer inez font-dawningOfaNewDay text-coolBlue hover:text-goldenrod text-7xl lg:hidden">ie</p> */}
+        <img id="logo" src="/images/blue-logo.png" alt="blue logo for website" className="inline cursor-pointer lg:hidden" height="50px;" width="50px;"></img>
         </Link>
         <Link href="/">
         <img
-          className="transition duration-200 ease-in-out cursor-pointer rounded-full w-2/3 md:w-1/6 lg:w-3/5 border-2 border-coolBlue hover:border-goldenrod hidden lg:block"
+          className="hidden w-2/3 transition duration-200 ease-in-out border-2 rounded-full cursor-pointer md:w-1/6 lg:w-3/5 border-coolBlue hover:border-goldenrod lg:block"
           src="/images/inez-pic.png"
           alt="hispanic girl with curly hair and small yorkie dog"
         ></img>
         </Link>
-        <h1 className="mt-3 text-5xl font-dawningOfaNewDay hidden lg:block my-name">Inez Escandón</h1>
-        <h4 className="uppercase font-semibold hidden lg:block role">Full Stack Web Developer</h4>
-        <ul className="lg:mt-3 flex flex-row lg:flex-col ml-auto lg:ml-0" id="nav-items">
+        <h1 className="hidden mt-3 text-5xl font-dawningOfaNewDay lg:block my-name">Inez Escandón</h1>
+        <h4 className="hidden font-semibold uppercase lg:block role">Full Stack Web Developer</h4>
+        <ul className="flex flex-row ml-auto lg:mt-3 lg:flex-col lg:ml-0" id="nav-items">
           {sections.map((item, i) => {
             return (
               <Link key={item.slug} href={item.slug}>
@@ -33,8 +33,8 @@ export default function SideNav({ selectedSection }) {
                   tabIndex={0}
                   className={`p-2 cursor-pointer my-2 text-center md:hover:text-goldenrod md:transition md:duration-200 md:ease-in-out ${
                     item.slug === selectedSection ? "text-coolBlue" : ""
-                  }`}
-                  onKeyDown={(e)=>{
+                  } ${item.slug === "work/get-coords" ? "hidden lg:block" : ""}`}
+                  onKeyDown={(e)=>{d
                     if (e.key === "Enter" || "") {
                       window.location.href = `/${item.slug}`;
                     }
@@ -46,7 +46,7 @@ export default function SideNav({ selectedSection }) {
             );
           })}
         </ul>
-        <ul className="lg:mt-3 w-full lg:flex-row justify-center hidden lg:flex">
+        <ul className="justify-center hidden w-full lg:mt-3 lg:flex-row lg:flex">
           <SocialIcons isNav={true}/>
         </ul>
       </aside>
