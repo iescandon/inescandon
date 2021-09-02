@@ -68,15 +68,15 @@ aside {
 }
 
 .text {
-  background-color: #0d98ba;
-  color: white;
+  /* background-color: #0d98ba;
+  color: white; */
   font-size: 16px;
   padding: 16px 32px;
 }
 
 .text:hover {
-  background-color: #FFD700;
-  color: black;
+  /* background-color: #FFD700;
+  color: black; */
 }
 
 .quiz-container {

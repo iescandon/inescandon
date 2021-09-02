@@ -39,7 +39,7 @@ function MyForm() {
         <input className="border border-platinum rounded" id="email" type="email" name="email" required />
         <label className="mt-5" htmlFor="message">Message:</label>
         <textarea className="border border-platinum rounded" id="message" name="message"></textarea>
-        <button className="transition duration-300 ease-in-out self-end p-3 mt-10 text-white bg-coolBlue hover:bg-goldenrod hover:text-black rounded w-1/4 md:w-1/6 submit-btn" type="submit" disabled={serverState.submitting}>
+        <button className="md:transition md:duration-200 md:ease-in-out self-end p-3 mt-10 text-white bg-coolBlue md:hover:bg-goldenrod md:hover:text-black rounded w-1/4 md:w-1/6 submit-btn" type="submit" disabled={serverState.submitting}>
           Submit
         </button>
         {serverState.status && (
