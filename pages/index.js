@@ -58,7 +58,7 @@ export default function Home() {
                   <Link href={`/work/${item.slug}`}>
                     <div className="rounded-md cursor-pointer overlay">
                         <div className="middle">
-                        <div className="text-white rounded-md text md:transition md:duration-200 md:ease-in-out bg-coolBlue md:hover:text-black md:hover:bg-goldenrod">See More</div>
+                        <div className="text-white rounded-md text md:transition md:duration-200 md:ease-in-out bg-coolBlue md:hover:text-black md:hover:bg-goldenrod">Read More</div>
                     </div>
                     </div>
                   </Link>
