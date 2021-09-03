@@ -27,7 +27,7 @@ export default function Home() {
             <div className="flex justify-center w-full col-span-2">
               <Link href="/">
                 <img
-                  className="w-2/4 mb-5 border-2 rounded-full cursor-pointe md:w-1/3 border-coolBlue lg:hidden"
+                  className="w-2/4 mb-5 border-2 rounded-full cursor-pointe md:w-1/3 lg:hidden"
                   src="/images/inez-pic.png"
                   alt="hispanic girl with curly hair and small yorkie dog"
                 ></img>
@@ -42,7 +42,20 @@ export default function Home() {
                 <p>{item.description}</p>
               </div>
               <div key={item.slug} className="p-5 my-5 md:col-span-1">
-                <div className="container">
+                {/* <div className="container"> */}
+                <div className="flex flex-col ">
+                    {/* <img
+                      id="project-image"
+                      className="w-full rounded-md shadow-lg image"
+                      src={item.image.src}
+                      alt={item.image.alt}
+                      tabIndex={0}
+                      onKeyDown={(e)=>{
+                      if (e.key === "Enter" || "") {
+                      window.location.href = `/work/${item.slug}`;
+                    }
+                  }}
+                    ></img> */}
                     <img
                       id="project-image"
                       className="w-full rounded-md shadow-lg image"
@@ -56,11 +69,12 @@ export default function Home() {
                   }}
                     ></img>
                   <Link href={`/work/${item.slug}`}>
-                    <div className="rounded-md cursor-pointer overlay">
+                    <button className="relative w-1/4 p-2 bg-goldenrod">See More</button>
+                    {/* <div className="rounded-md cursor-pointer overlay">
                         <div className="middle">
                         <div className="text-white rounded-md text md:transition md:duration-200 md:ease-in-out bg-coolBlue md:hover:text-black md:hover:bg-goldenrod">See More</div>
                     </div>
-                    </div>
+                    </div> */}
                   </Link>
                 </div>
               </div>
