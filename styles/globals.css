@@ -87,6 +87,35 @@ aside {
   height: 80vh;
 }
 
+.card-wrapper {
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 16px 0px 25px;
+}
+
+.readme-btn {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 16px 20px;
+    /* border-top: 1px solid hsla(0, 0%, 60.8%, 0.25);
+    border-right: 1px solid hsla(0, 0%, 60.8%, 0.25);
+    border-left: 1px solid hsla(0, 0%, 60.8%, 0.25); */
+    border-radius: 1px;
+    /* background-color: #f9a40b;
+    font-family: 'Object Sans', 'Trebuchet MS', sans-serif;
+    color: #100f0d; */
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
 #menu-image {
   transition: transform 0.5s ease;
 }
