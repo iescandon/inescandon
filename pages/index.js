@@ -23,7 +23,7 @@ export default function Home() {
             <div className="flex justify-center w-full col-span-2">
               <Link href="/">
                 <img
-                  className="w-2/4 mb-5 border-2 rounded-full cursor-pointe md:w-1/3 lg:hidden"
+                  className="w-2/4 mb-5 rounded-full cursor-pointe md:w-1/3 lg:hidden"
                   src="/images/inez-pic.png"
                   alt="hispanic girl with curly hair and small yorkie dog"
                 ></img>
