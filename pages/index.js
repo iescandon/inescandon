@@ -17,10 +17,6 @@ export default function Home() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         ></link>
       </Head>
-      <Layout
-          isWork={false}
-          selectedSection={""}
-        >
         <section className="w-full p-10 lg:w-9/12 lg:ml-auto">
           <div id="work" className="flex flex-col w-full md:grid md:grid-cols-2">
             <p className="mb-5 text-4xl font-semibold md:col-span-2">Hola! My name is <span className="pr-1 text-5xl font-medium font-dawningOfaNewDay">Inez</span>. I'm a Full Stack Web Developer based out of Houston, TX. <img src="/images/texas.png" alt="texas icon" height="30px" width="30px" className="inline pb-1"></img></p>
@@ -69,7 +65,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-      </Layout>
     </>
   );
 }

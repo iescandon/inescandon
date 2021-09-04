@@ -9,6 +9,10 @@ export default function SideNav({ selectedSection }) {
     { name: "About", slug: "about" },
     { name: "Contact", slug: "contact" },
   ];
+  let selectedRoute = "";
+  if (selectedSection === "/work/[slug]") {
+    selectedRoute = "/work/get-coords";
+  }
   return (
       <aside id="sidenav" className="relative inset-0 flex items-center justify-center w-full p-5 overflow-auto text-center border-b shadow-md lg:border-r border-silver lg:fixed lg:w-3/12 lg:min-h-screen lg:flex-col lg:shadow-lg">
         <Link href="/">
@@ -17,7 +21,7 @@ export default function SideNav({ selectedSection }) {
         </Link>
         <Link href="/">
         <img
-          className="hidden w-2/3 transition duration-200 ease-in-out border-2 rounded-full cursor-pointer md:w-1/6 lg:w-3/5 border-coolBlue hover:border-goldenrod lg:block"
+          className="hidden w-2/3 transition duration-200 ease-in-out border-2 rounded-full cursor-pointer border-coolBlue md:w-1/6 lg:w-3/5 hover:border-goldenrod lg:block"
           src="/images/inez-pic.png"
           alt="hispanic girl with curly hair and small yorkie dog"
         ></img>
@@ -26,14 +30,15 @@ export default function SideNav({ selectedSection }) {
         <h4 className="hidden font-semibold uppercase lg:block role">Full Stack Web Developer</h4>
         <ul className="flex flex-row ml-auto lg:mt-3 lg:flex-col lg:ml-0" id="nav-items">
           {sections.map((item, i) => {
+            const currentRoute = `/${item.slug}`
             return (
               <Link key={item.slug} href={item.slug}>
                 <li
                   id="section-nav"
                   tabIndex={0}
                   className={`p-2 cursor-pointer my-2 text-center md:hover:text-goldenrod md:transition md:duration-200 md:ease-in-out ${
-                    item.slug === selectedSection ? "text-coolBlue" : ""
-                  } ${item.slug === "work/get-coords" ? "hidden lg:block" : ""}`}
+                    currentRoute === selectedRoute ? "text-coolBlue" : ""
+                  }`}
                   onKeyDown={(e)=>{d
                     if (e.key === "Enter" || "") {
                       window.location.href = `/${item.slug}`;

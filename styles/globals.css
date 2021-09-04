@@ -33,6 +33,10 @@ aside {
   border-radius: 25%;
 } */
 
+.menu-item {
+  /* width: 30vw!important; */
+}
+
 .container {
   position: relative;
   width: 50%;
@@ -115,7 +119,7 @@ aside {
     font-weight: 400;
     letter-spacing: 0.5px;
 }
-
+/* 
 #menu-image {
   transition: transform 0.5s ease;
 }
@@ -124,7 +128,7 @@ aside {
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
+} */
 
 #project-image {
   @apply border border-platinum;
