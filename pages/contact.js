@@ -24,9 +24,10 @@ export default function Contact() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         ></link>
       </Head>
+      <Layout>
         <section className="w-full p-10 lg:w-9/12 lg:ml-auto">
           <div id="contact">
-          <p className="mb-5 text-4xl font-semibold">Let's <span className="text-5xl font-medium font-dawningOfaNewDay">link</span> up!</p>
+          <p className="mb-5 text-4xl font-semibold">Let&apos;s <span className="text-5xl font-medium font-dawningOfaNewDay">link</span> up!</p>
           {/* <div className="flex flex-row lg:block">
             <p className="inline mb-5 text-4xl font-semibold">Let's <span className="text-5xl font-medium font-dawningOfaNewDay">link</span> up!</p>
             <ul className="flex flex-row inline pt-2 ml-2 lg:hidden">
@@ -67,6 +68,7 @@ export default function Contact() {
           </li> */}
           </ul>
         </section>
+      </Layout>
     </>
   );
 }

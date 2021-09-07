@@ -18,6 +18,7 @@ export default function AboutMe() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         ></link>
       </Head>
+      <Layout>
         <section className="w-full p-10 lg:w-9/12 lg:ml-auto">
           <div id="about">
             <p className="mb-5 text-4xl font-semibold">Get to know <span className="text-5xl font-medium font-dawningOfaNewDay">me</span></p>
@@ -26,6 +27,7 @@ export default function AboutMe() {
             {/* <AboutQuiz /> */}
           </div>
         </section>
+      </Layout>
     </>
   );
 }

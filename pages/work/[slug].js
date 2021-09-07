@@ -9,13 +9,14 @@ import SideNav from "../../components/sidenav";
 
 export default function WorkPage({ slug, title, description, image, github, live_url }) {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState();
+  console.log(selectedProjectIndex);
   useEffect(() => {
     work.map((item, i)=>{
       if (item.title === title) {
         setSelectedProjectIndex(i);
       }
     })
-  },[title]);
+  },[title, selectedProjectIndex]);
   return (
     <>
       <Head>
@@ -26,9 +27,10 @@ export default function WorkPage({ slug, title, description, image, github, live
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         ></link>
       </Head>
+      <Layout>
         <section className="flex flex-col w-full p-10 ml-auto lg:w-9/12 lg:min-h-screen ">
           <div className="top-work">
-          <div className="flex flex-row mb-5">
+          <div className="flex flex-row items-center mb-5">
             <p className="text-4xl font-semibold uppercase">{title}</p>
             <a href={github} target="_blank" rel="noreferrer" tabIndex={-1}><i className="ml-4 text-3xl md:transition md:duration-200 md:ease-in-out fab fa-github-square text-coolBlue md:hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
                       if (e.key === "Enter" || "") {
@@ -44,23 +46,28 @@ export default function WorkPage({ slug, title, description, image, github, live
             }}></i></a>
           </div>
           <div>{description}</div>
-          { image.gif ? 
-          <a href={live_url} target="_blank" rel="noreferrer">
-            <img className="w-full mx-auto my-5 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.gif} alt={image.alt}></img>
-          </a> :
-          <a href={live_url} target="_blank" rel="noreferrer">
-            <img className="w-full mx-auto my-5 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.src} alt={image.alt}></img>
-          </a>
-          }
+          {/* <div className="flex flex-row"> */}
+            {/* {selectedProjectIndex !== 0 ? <i className="mx-auto my-auto text-3xl fas fa-chevron-left" onClick={() => setSelectedProjectIndex(selectedProjectIndex - 1)}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-left"></i>} */}
+            { image.gif ? 
+            // <a href={live_url} target="_blank" rel="noreferrer" className="w-full mx-auto md:w-3/4">
+            <a href={live_url} target="_blank" rel="noreferrer">
+              <img className="w-full mx-auto my-5 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.gif} alt={image.alt}></img>
+            </a> :
+            <a href={live_url} target="_blank" rel="noreferrer">
+              <img className="w-full mx-auto my-5 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.src} alt={image.alt}></img>
+            </a>
+            }
+            {/* {selectedProjectIndex !== 4 ? <i className="mx-auto my-auto text-3xl fas fa-chevron-right" onClick={() => setSelectedProjectIndex(selectedProjectIndex + 1)}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-right"></i>} */}
+          {/* </div> */}
           </div>
         <SideMenu selectedProjectIndex={selectedProjectIndex} setSelectedProjectIndex={setSelectedProjectIndex} image={image} />
         </section>
+      </Layout>
     </>
   );
 }
 
 export async function getStaticProps(context) {
-  console.log('yo, yo', context);
   const { params } = context;
   return {
     props: work.find((item) => item.slug === params.slug),

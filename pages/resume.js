@@ -4,8 +4,6 @@ import SideNav from "../components/sidenav";
 import Layout from '../components/layout';
 
 export default function Resume() {
-  const lorem =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque turpis lorem, ac dictum diam dignissim non. Proin gravida viverra dui vitae suscipit. Cras ac ullamcorper magna, eget auctor massa. Donec dictum tincidunt risus, quis finibus justo luctus eget. Aliquam lacus massa, blandit tincidunt felis eget, ullamcorper finibus purus. Vivamus euismod sem quis condimentum feugiat. Duis ornare malesuada ligula, id porta nisl finibus ut. Cras volutpat eu est eu porta. Integer hendrerit porta justo interdum vestibulum. Morbi sit amet tortor tellus.";
   return (
     <>
       <Head>
@@ -17,13 +15,17 @@ export default function Resume() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         ></link>
       </Head>
+      <Layout>
         <section className="w-full p-10 lg:w-9/12 lg:ml-auto">
           <div id="resume">
             <p className="mb-5 text-4xl font-semibold">Check out my <span className="text-5xl font-medium font-dawningOfaNewDay">resume</span></p>
-            <div>{lorem}</div>
-            {/* <div>DOWNDLOAD RESUME BUTTON</div> */}
+            <div>My name is Inez Escandon and I&apos;m a Full Stack Web Developer from Houston, TX. Extremely passionate about creating user-centric designs and collaborating with others to develop simple, clean, and meaningful mobile and web applications. I am a highly motivated self-starter who is fully committed to proving herself in a new career, and would be a great asset to any company. Open to new opportunities!</div>
+            <button href="" className="self-end w-1/4 p-3 mt-10 text-black rounded md:transition md:duration-200 md:ease-in-out md:hover:text-white md:hover:bg-coolBlue bg-goldenrod md:w-1/6">
+              Download Resume
+            </button>          
           </div>
         </section>
+      </Layout>
     </>
   );
 }

@@ -34,12 +34,12 @@ function MyForm() {
   return (
       <form className="flex flex-col focus:outline-goldenrod" onSubmit={handleOnSubmit}>
         <label className="mt-5" htmlFor="name">Name:</label>
-        <input className="border border-platinum rounded" id="name" type="name" name="name" required />
+        <input className="border rounded border-platinum" id="name" type="name" name="name" required />
         <label className="mt-5" htmlFor="email">Email:</label>
-        <input className="border border-platinum rounded" id="email" type="email" name="email" required />
+        <input className="border rounded border-platinum" id="email" type="email" name="email" required />
         <label className="mt-5" htmlFor="message">Message:</label>
-        <textarea className="border border-platinum rounded" id="message" name="message"></textarea>
-        <button className="md:transition md:duration-200 md:ease-in-out self-end p-3 mt-10 text-white bg-coolBlue md:hover:bg-goldenrod md:hover:text-black rounded w-1/4 md:w-1/6 submit-btn" type="submit" disabled={serverState.submitting}>
+        <textarea className="border rounded border-platinum" id="message" name="message"></textarea>
+        <button className="self-end w-1/4 p-3 mt-10 text-black rounded md:transition md:duration-200 md:ease-in-out md:hover:text-white md:hover:bg-coolBlue bg-goldenrod md:w-1/6 submit-btn" type="submit" disabled={serverState.submitting}>
           Submit
         </button>
         {serverState.status && (
