@@ -4,6 +4,7 @@ import SideNav from "../components/sidenav";
 import { work } from "../lib/data.js";
 import Link from "next/link";
 import Layout from '../components/layout';
+import SocialIcons from "../components/social-icons";
 
 export default function Home() {
   return (
@@ -22,16 +23,17 @@ export default function Home() {
           <div id="work" className="flex flex-col w-full md:grid md:grid-cols-2">
             <p className="mb-5 text-4xl font-semibold md:col-span-2">Hola! My name is <span className="pr-1 text-5xl font-medium font-dawningOfaNewDay">Inez</span>. I'm a Full Stack Web Developer based out of Houston, TX. <img src="/images/texas.png" alt="texas icon" height="30px" width="30px" className="inline pb-1"></img></p>
             <div className="flex justify-center w-full col-span-2">
-              <Link href="/">
                 <img
-                  className="w-2/4 mb-5 rounded-full cursor-pointe md:w-1/3 lg:hidden"
+                  className="w-2/4 mb-5 rounded-full md:w-1/3 lg:hidden"
                   src="/images/inez-pic.png"
                   alt="hispanic girl with curly hair and small yorkie dog"
                 ></img>
-              </Link>
-            </div> 
+            </div>
+          <ul className="flex flex-row justify-center inline lg:hidden md:col-span-2">
+            <SocialIcons />
+          </ul>
             <img src="/images/houston.jpg" alt="houston texas city skyline" className="hidden w-full mb-10 lg:block md:col-span-2"></img>
-            <hr className="col-span-2 my-3 border-t-2 border-coolBlue"></hr>
+            <hr className="col-span-2 my-3 border-t-2 border-gray-300 lg:border-coolBlue"></hr>
             {work.map((item, i) => (
               <>
               <div className="my-auto mr-5 md:col-span-1">

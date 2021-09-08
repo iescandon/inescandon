@@ -65,7 +65,7 @@ export default function SideNav({ selectedSection }) {
           })}
         </ul>
         <ul className="justify-center hidden w-full lg:mt-3 lg:flex-row lg:flex">
-          <SocialIcons isNav={true}/>
+          <SocialIcons />
         </ul>
       </nav>
   );

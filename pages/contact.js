@@ -37,8 +37,8 @@ export default function Contact() {
             {/* <div>{lorem}</div> */}
             <ContactForm />
           </div>
-          <ul className="flex flex-row justify-center inline pt-10 ml-2 lg:hidden">
-            <SocialIcons isNav={false}/>
+          {/* <ul className="flex flex-row justify-center inline pt-10 ml-2 lg:hidden"> */}
+            {/* <SocialIcons isNav={false}/> */}
             {/* <li className="mx-4 text-3xl">
             <a href="https://github.com/iescandon" target="_blank" rel="noreferrer" tabIndex={-1}>
               <i className="transition duration-200 ease-in-out fab fa-github hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
@@ -66,7 +66,7 @@ export default function Contact() {
                   }}></i>
             </a>
           </li> */}
-          </ul>
+          {/* </ul> */}
         </section>
       </Layout>
     </>
