@@ -62,7 +62,6 @@ const lorem =
                       }
             }}></i></a>
           </div>
-          {/* <div>{lorem}</div> */}
           <div>{description}</div>
           {/* <div className="flex flex-row"> */}
             {/* {selectedProjectIndex !== 0 ? <i className="cursor-pointer mx-auto my-auto text-3xl fas fa-chevron-left" onClick={() => {changeSite(-1)}}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-left"></i>} */}

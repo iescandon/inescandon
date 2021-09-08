@@ -41,22 +41,10 @@ export default function Home() {
                 {/* <p className="pt-3 my-5 italic uppercase md:pt-0 md:mt-0 md:mb-5">{item.name}</p> */}
                 <p>{item.blurb}</p>
               </div>
-              {/* <div key={item.slug} className="p-5 my-5 md:col-span-1"> */}
+
               <div key={item.slug} className="md:col-span-1">
-                {/* <div className="container"> */}
+
               <div className="card-wrapper">
-                    {/* <img
-                      id="project-image"
-                      className="w-full rounded-md shadow-lg image"
-                      src={item.image.src}
-                      alt={item.image.alt}
-                      tabIndex={0}
-                      onKeyDown={(e)=>{
-                      if (e.key === "Enter" || "") {
-                      window.location.href = `/work/${item.slug}`;
-                    }
-                  }}
-                    ></img> */}
                     <img
                       id="project-image"
                       className="w-full rounded-md shadow-lg image"
@@ -71,16 +59,10 @@ export default function Home() {
                     ></img>
                   <Link href={`/work/${item.slug}`}>
                     <button className="readme-btn py-3 px-6 text-black md:transition md:duration-200 md:ease-in-out md:hover:text-white md:hover:bg-coolBlue bg-goldenrod">See More</button>
-                    {/* <div className="rounded-md cursor-pointer overlay">
-                        <div className="middle">
-                        <div className="text-white rounded-md text md:transition md:duration-200 md:ease-in-out bg-coolBlue md:hover:text-black md:hover:bg-goldenrod">See More</div>
-                    </div>
-                    </div> */}
                   </Link>
                 </div>
             </div>
             {i + 1 !== work.length ? <hr className="col-span-2 text-platinum"></hr> : null }
-            {/* {i + 1 !== work.length ? <hr className="col-span-2 my-3 text-platinum"></hr> : null } */}
             </>
             ))}
           </div>
