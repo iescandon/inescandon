@@ -34,7 +34,7 @@ export default function Contact() {
               <SocialIcons />
             </ul>
           </div> */}
-            <div>{lorem}</div>
+            {/* <div>{lorem}</div> */}
             <ContactForm />
           </div>
           <ul className="flex flex-row justify-center inline pt-10 ml-2 lg:hidden">

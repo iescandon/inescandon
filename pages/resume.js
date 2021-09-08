@@ -20,9 +20,44 @@ export default function Resume() {
           <div id="resume">
             <p className="mb-5 text-4xl font-semibold">Check out my <span className="text-5xl font-medium font-dawningOfaNewDay">resume</span></p>
             <div>My name is Inez Escandon and I&apos;m a Full Stack Web Developer from Houston, TX. Extremely passionate about creating user-centric designs and collaborating with others to develop simple, clean, and meaningful mobile and web applications. I am a highly motivated self-starter who is fully committed to proving herself in a new career, and would be a great asset to any company. Open to new opportunities!</div>
-            <button href="" className="self-end w-1/4 p-3 mt-10 text-black rounded md:transition md:duration-200 md:ease-in-out md:hover:text-white md:hover:bg-coolBlue bg-goldenrod md:w-1/6">
+            <button href="" className="self-end w-1/4 p-3 my-10 text-black md:transition md:duration-200 md:ease-in-out md:hover:text-white md:hover:bg-coolBlue bg-goldenrod md:w-1/6">
               Download Resume
-            </button>          
+            </button> 
+            <hr className="border-t-2 border-platinum mb-10"></hr>    
+            <div className="flex flex-row justify-around">
+              <ul>
+                <li className="font-semibold">Skills</li>
+                <li>stuff</li>
+                <li>stuff</li>
+                <li>stuff</li>
+                <li>stuff</li>
+                <li>stuff</li>
+              </ul>
+              <ul>
+                <li className="font-semibold">Tools</li>
+                <li>stuff</li>
+                <li>stuff</li>
+                <li>stuff</li>
+                <li>stuff</li>
+                <li>stuff</li>
+              </ul>
+              <ul>
+                <li className="font-semibold">Other</li>
+                <li>stuff</li>
+                <li>stuff</li>
+                <li>stuff</li>
+                <li>stuff</li>
+                <li>stuff</li>
+              </ul>
+            </div>     
+            <hr className="border-t-2 border-platinum my-10"></hr>   
+            <div>
+              <p className="text-2xl font-semibold">Experience</p>
+            </div>
+            <hr className="border-t-2 border-platinum my-10"></hr>   
+            <div>
+              <p className="text-2xl font-semibold">Education</p>
+            </div>
           </div>
         </section>
       </Layout>

@@ -14,11 +14,11 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
                   }}></i></a>
         </Link> */}
       {/* <hr className="col-span-2 border-t-2 border-platinum"></hr> */}
-          <ul className="flex flex-row justify-center">
+          <ul className="w-full flex flex-row justify-center">
           {work.map((item, i) => {
             return (
               <Link href={`/work/${item.slug}`} key={item.title}>
-                <li className="mx-1 md:mx-2 menu-item">
+                <li className="mx-1 md:m-2 menu-item">
                   <img
                     key={item.slug}
                     id="menu-image"

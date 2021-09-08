@@ -7,20 +7,37 @@ import SideMenu from "../../components/sidemenu";
 import Layout from '../../components/layout';
 import SideNav from "../../components/sidenav";
 
-export default function WorkPage({ slug, title, description, image, github, live_url }) {
+export default function WorkPage({ slug, name, title, description, image, github, live_url }) {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState();
-  console.log(selectedProjectIndex);
+
   useEffect(() => {
     work.map((item, i)=>{
       if (item.title === title) {
         setSelectedProjectIndex(i);
       }
     })
-  },[title, selectedProjectIndex]);
+  },[title]);
+
+const lorem =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque turpis lorem, ac dictum diam dignissim non. Proin gravida viverra dui vitae suscipit. Cras ac ullamcorper magna, eget auctor massa. Donec dictum tincidunt risus, quis finibus justo luctus eget. Aliquam lacus massa, blandit tincidunt felis eget, ullamcorper finibus purus. Vivamus euismod sem quis condimentum feugiat. Duis ornare malesuada ligula, id porta nisl finibus ut. Cras volutpat eu est eu porta. Integer hendrerit porta justo interdum vestibulum. Morbi sit amet tortor tellus.";
+  // const changeSite = (x) => {
+  //   console.log(selectedProjectIndex);
+  //   console.log(x);
+  //   const newIndex = selectedProjectIndex + x;
+  //   console.log(newIndex)
+  //   setSelectedProjectIndex(newIndex);
+  //   work.map((item, i)=>{
+  //     if (i === newIndex) {
+  //     console.log(item.slug);
+  //     window.location.href = `/work/${item.slug}`;
+  //     }
+  //   })
+  // }
+
   return (
     <>
       <Head>
-        <title>Inez Escandón | {title}</title>
+        <title>Inez Escandón | {name}</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
@@ -31,7 +48,7 @@ export default function WorkPage({ slug, title, description, image, github, live
         <section className="flex flex-col w-full p-10 ml-auto lg:w-9/12 lg:min-h-screen ">
           <div className="top-work">
           <div className="flex flex-row items-center mb-5">
-            <p className="text-4xl font-semibold uppercase">{title}</p>
+            <p className="text-4xl font-semibold uppercase">{name}</p>
             <a href={github} target="_blank" rel="noreferrer" tabIndex={-1}><i className="ml-4 text-3xl md:transition md:duration-200 md:ease-in-out fab fa-github-square text-coolBlue md:hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
                       if (e.key === "Enter" || "") {
                         const page = github;
@@ -45,21 +62,27 @@ export default function WorkPage({ slug, title, description, image, github, live
                       }
             }}></i></a>
           </div>
+          {/* <div>{lorem}</div> */}
           <div>{description}</div>
           {/* <div className="flex flex-row"> */}
-            {/* {selectedProjectIndex !== 0 ? <i className="mx-auto my-auto text-3xl fas fa-chevron-left" onClick={() => setSelectedProjectIndex(selectedProjectIndex - 1)}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-left"></i>} */}
+            {/* {selectedProjectIndex !== 0 ? <i className="cursor-pointer mx-auto my-auto text-3xl fas fa-chevron-left" onClick={() => {changeSite(-1)}}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-left"></i>} */}
             { image.gif ? 
             // <a href={live_url} target="_blank" rel="noreferrer" className="w-full mx-auto md:w-3/4">
             <a href={live_url} target="_blank" rel="noreferrer">
-              <img className="w-full mx-auto my-5 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.gif} alt={image.alt}></img>
+              <img className="w-full mx-auto md:w-3/4 my-7 border rounded-md shadow-lg border-platinum" key={slug} src={image.gif} alt={image.alt}></img>
             </a> :
             <a href={live_url} target="_blank" rel="noreferrer">
               <img className="w-full mx-auto my-5 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.src} alt={image.alt}></img>
             </a>
             }
-            {/* {selectedProjectIndex !== 4 ? <i className="mx-auto my-auto text-3xl fas fa-chevron-right" onClick={() => setSelectedProjectIndex(selectedProjectIndex + 1)}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-right"></i>} */}
+            {/* {selectedProjectIndex !== 4 ? <i className="cursor-pointer mx-auto my-auto text-3xl fas fa-chevron-right" onClick={() => {changeSite(1)}}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-right"></i>} */}
           {/* </div> */}
           </div>
+          {/* <div> */}
+            <hr className="col-span-2 border-t-2 border-platinum my-5"></hr>  
+            {/* <p className="text-xl font-semibold uppercase">Other Projects</p>  */}
+          {/* </div> */}
+
         <SideMenu selectedProjectIndex={selectedProjectIndex} setSelectedProjectIndex={setSelectedProjectIndex} image={image} />
         </section>
       </Layout>

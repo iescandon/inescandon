@@ -18,13 +18,24 @@ export default function SideNav({ selectedSection }) {
       <nav id="sidenav" className="relative inset-0 flex items-center justify-center w-full p-5 overflow-auto text-center border-b shadow-md lg:border-r border-silver lg:fixed lg:w-3/12 lg:min-h-screen lg:flex-col lg:shadow-lg">
         <Link href="/">
         {/* <p className="pl-2 font-extrabold transition duration-200 ease-in-out cursor-pointer inez font-dawningOfaNewDay text-coolBlue hover:text-goldenrod text-7xl lg:hidden">ie</p> */}
-        <img id="logo" src="/images/blue-logo.png" alt="blue logo for website" className="inline cursor-pointer lg:hidden" height="50px;" width="50px;"></img>
+        <img id="logo" src="/images/blue-logo.png" alt="blue logo for website" className="inline cursor-pointer lg:hidden" height="50px;" width="50px;"           tabIndex={0}
+            onKeyDown={(e)=>{
+              if (e.key === "Enter" || "") {
+                 window.location.href = '/';
+              }
+          }}></img>
         </Link>
         <Link href="/">
         <img
           className="hidden w-2/3 transition duration-200 ease-in-out border-2 rounded-full cursor-pointer border-coolBlue md:w-1/6 lg:w-3/5 hover:border-goldenrod lg:block"
           src="/images/inez-pic.png"
           alt="hispanic girl with curly hair and small yorkie dog"
+          tabIndex={0}
+            onKeyDown={(e)=>{
+              if (e.key === "Enter" || "") {
+                 window.location.href = '/';
+              }
+          }}
         ></img>
         </Link>
         <h1 className="hidden mt-3 text-5xl font-dawningOfaNewDay lg:block my-name">Inez Escandón</h1>
@@ -41,7 +52,7 @@ export default function SideNav({ selectedSection }) {
                   className={`p-2 cursor-pointer my-2 text-center md:hover:text-goldenrod md:transition md:duration-200 md:ease-in-out ${
                     currentRoute === selectedRoute ? "text-coolBlue" : ""
                   }`}
-                  onKeyDown={(e)=>{d
+                  onKeyDown={(e)=>{
                     if (e.key === "Enter" || "") {
                       window.location.href = `/${item.slug}`;
                     }
