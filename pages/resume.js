@@ -115,7 +115,7 @@ export default function Resume() {
                   <p>Masters in Instructional Technology</p>
                 </div>
                 <div className="col-span-2 md:col-span-1">
-                  <p>hello</p>
+                  {/* <p>hello</p> */}
                 </div>
               </section>
               <section className="grid grid-cols-2 mb-5">
@@ -125,7 +125,7 @@ export default function Resume() {
                   <p>Bachelors in Bilingual Education</p>
                 </div>
                 <div className="col-span-2 md:col-span-1">
-                  <p>hello</p>
+                  {/* <p>hello</p> */}
                 </div>
               </section>
             </div>
