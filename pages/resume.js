@@ -98,34 +98,34 @@ export default function Resume() {
             <hr className="my-10 border-t-2 border-platinum"></hr>   
             <div>
               <p className="mb-5 text-3xl font-semibold">Education</p>
-              <section className="grid grid-cols-2 mb-5">
-                <div className="col-span-2 md:col-span-1">
+              <section className="grid grid-cols-4 mb-5">
+                <div className="col-span-4 md:col-span-3">
                   <p className="font-semibold uppercase">UT Austin Coding Bootcamp</p>
                   <p className="italic">Houston, TX (September 2020)</p>
                   <p>Certificate for Full-Stack Web Development</p>
                 </div>
-                <div className="col-span-2 md:col-span-1">
-                  {/* <img src="/images/bootcamp-certificate.png" alt="ut austin bootcamp certificate" className=""/> */}
+                <div className="col-span-4 my-2 md:my-auto md:col-span-1">
+                  <img src="/images/bootcamp-certificate.png" alt="ut austin bootcamp certificate" className="border resumeimg border-platinum"/>
                 </div>
               </section>
-              <section className="grid grid-cols-2 mb-5">
-                <div className="col-span-2 md:col-span-1">
+              <section className="grid grid-cols-4 mb-5">
+                <div className="col-span-4 md:col-span-3">
                   <p className="font-semibold uppercase">University of Texas at San Antonio</p>
                   <p className="italic">San Antonio, TX (May 2013)</p>
                   <p>Masters in Instructional Technology</p>
                 </div>
-                <div className="col-span-2 md:col-span-1">
-                  {/* <p>hello</p> */}
+                <div className="col-span-4 my-2 md:my-auto md:col-span-1">
+                  <img src="/images/rowdy.png" alt="ut san antonio roadrunner logo" className="resumeimg"/>
                 </div>
               </section>
-              <section className="grid grid-cols-2 mb-5">
-                <div className="col-span-2 md:col-span-1">
+              <section className="grid grid-cols-4 mb-5">
+                <div className="col-span-4 md:col-span-3">
                   <p className="font-semibold uppercase">University of Texas at Austin</p>
                   <p className="italic">Austin, TX (May 2010)</p>
                   <p>Bachelors in Bilingual Education</p>
                 </div>
-                <div className="col-span-2 md:col-span-1">
-                  {/* <p>hello</p> */}
+                <div className="col-span-4 my-2 md:my-auto md:col-span-1">
+                <img src="/images/longhorn.png" alt="ut austin longhorn logo" className="resumeimg"/>
                 </div>
               </section>
             </div>

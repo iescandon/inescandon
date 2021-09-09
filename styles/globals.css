@@ -96,6 +96,10 @@ aside {
   padding: 45px 0px 55px;
 }
 
+.resumeimg {
+  width: 90px;
+}
+
 .readme-btn {
     position: absolute;
     left: auto;
