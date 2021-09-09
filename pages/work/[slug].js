@@ -64,23 +64,23 @@ const lorem =
           </div>
           <div>{description}</div>
           {/* <div className="flex flex-row"> */}
-            {/* {selectedProjectIndex !== 0 ? <i className="cursor-pointer mx-auto my-auto text-3xl fas fa-chevron-left" onClick={() => {changeSite(-1)}}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-left"></i>} */}
+            {/* {selectedProjectIndex !== 0 ? <i className="mx-auto my-auto text-3xl cursor-pointer fas fa-chevron-left" onClick={() => {changeSite(-1)}}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-left"></i>} */}
             { image.gif ? 
             // <a href={live_url} target="_blank" rel="noreferrer" className="w-full mx-auto md:w-3/4">
             <a href={live_url} target="_blank" rel="noreferrer">
-              <img className="w-full mx-auto md:w-3/4 my-7 border rounded-md shadow-lg border-platinum" key={slug} src={image.gif} alt={image.alt}></img>
+              <img className="w-full mx-auto my-8 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.gif} alt={image.alt}></img>
             </a> :
             <a href={live_url} target="_blank" rel="noreferrer">
               <img className="w-full mx-auto my-5 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.src} alt={image.alt}></img>
             </a>
             }
-            {/* {selectedProjectIndex !== 4 ? <i className="cursor-pointer mx-auto my-auto text-3xl fas fa-chevron-right" onClick={() => {changeSite(1)}}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-right"></i>} */}
+            {/* {selectedProjectIndex !== 4 ? <i className="mx-auto my-auto text-3xl cursor-pointer fas fa-chevron-right" onClick={() => {changeSite(1)}}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-right"></i>} */}
           {/* </div> */}
           </div>
-          {/* <div> */}
-            <hr className="col-span-2 border-t-2 border-platinum my-5"></hr>  
-            {/* <p className="text-xl font-semibold uppercase">Other Projects</p>  */}
-          {/* </div> */}
+          <div className="relative mt-10">
+            <hr className="col-span-1 my-5 border-t-2 border-coolBlue md:col-span-2"></hr>  
+            <p className="absolute top-0 pr-2 mt-1.5 text-xl font-semibold uppercase bg-white">Other Projects</p> 
+          </div>
 
         <SideMenu selectedProjectIndex={selectedProjectIndex} setSelectedProjectIndex={setSelectedProjectIndex} image={image} />
         </section>

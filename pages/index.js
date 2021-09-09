@@ -29,7 +29,7 @@ export default function Home() {
                   alt="hispanic girl with curly hair and small yorkie dog"
                 ></img>
             </div>
-          <ul className="flex flex-row justify-center inline lg:hidden md:col-span-2">
+          <ul className="flex flex-row justify-center inline mb-5 lg:hidden md:col-span-2">
             <SocialIcons />
           </ul>
             <img src="/images/houston.jpg" alt="houston texas city skyline" className="hidden w-full mb-10 lg:block md:col-span-2"></img>
@@ -50,15 +50,9 @@ export default function Home() {
                       className="w-full rounded-md shadow-lg image"
                       src={item.image.src}
                       alt={item.image.alt}
-                      tabIndex={0}
-                      onKeyDown={(e)=>{
-                      if (e.key === "Enter" || "") {
-                      window.location.href = `/work/${item.slug}`;
-                    }
-                  }}
                     ></img>
                   <Link href={`/work/${item.slug}`}>
-                    <button className="readme-btn py-3 px-6 text-black md:transition md:duration-200 md:ease-in-out md:hover:text-white md:hover:bg-coolBlue bg-goldenrod">See More</button>
+                    <button className="px-6 py-3 text-black readme-btn md:transition md:duration-200 md:ease-in-out md:hover:text-white md:hover:bg-coolBlue bg-goldenrod">See More</button>
                   </Link>
                 </div>
             </div>

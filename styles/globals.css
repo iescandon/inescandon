@@ -22,6 +22,10 @@ a {
   transition: color 0.1s linear;
 }
 
+p {
+  color: #201e1a;
+}
+
 input, textarea, select {
   padding: 10px!important;
 }
@@ -29,15 +33,6 @@ input, textarea, select {
 aside {
   @apply bg-offWhite;
 }
-
-/* .footer-icons {
-  font-size: 24px;
-  color: white;
-  background-color: #0d98ba;
-  padding: 4px 6px;
-  border-radius: 25%;
-} */
-
 
 .container {
   position: relative;

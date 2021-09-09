@@ -13,7 +13,13 @@ function MyForm() {
     });
     if (ok) {
       form.reset();
-    }
+      setTimeout(() => {
+        setServerState({
+          submitting: false,
+          status: null,
+        })
+        }, 4000);
+      }
   };
   const handleOnSubmit = e => {
     e.preventDefault();
@@ -51,7 +57,7 @@ function MyForm() {
           Send it!
         </button>
         {serverState.status && (
-          <p className={!serverState.status.ok ? "errorMsg" : ""}>
+          <p className={`absolute rounded top-5 right-5 p-5 bg-coolBlue text-white ${!serverState.status.ok ? "errorMsg" : ""}`}>
             {serverState.status.msg}
           </p>
         )}

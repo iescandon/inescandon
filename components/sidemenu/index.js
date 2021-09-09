@@ -5,8 +5,11 @@ import { work } from "../../lib/data";
 export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex, image}) {
   return (
       <div className="mt-5 overflow-auto">
-          <ul className="w-full flex flex-row justify-center">
+          <ul className="flex flex-row justify-center w-full">
           {work.map((item, i) => {
+            if(i !== selectedProjectIndex) {
+
+            
             return (
               <Link href={`/work/${item.slug}`} key={item.title}>
                 <li className="mx-1 md:m-2 menu-item">
@@ -33,6 +36,7 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
                 </li>
               </Link>
             );
+          }
           })}
         </ul>
       </div>
