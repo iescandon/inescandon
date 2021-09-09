@@ -34,6 +34,11 @@ aside {
   @apply bg-offWhite;
 }
 
+hr {
+ padding-left: -20px;
+ padding-right: -20px;
+}
+
 .container {
   position: relative;
   width: 50%;
