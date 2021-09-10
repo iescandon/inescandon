@@ -10,13 +10,13 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
             // if(i !== selectedProjectIndex) {
             return (
               <Link href={`/work/${item.slug}`} key={item.title}>
-                <li className="mx-1 md:m-2 menu-item">
+                <li className="mx-1 md:mx-2 menu-item">
                   <img
                     key={item.slug}
                     id="menu-image"
                     className={`flex flex-row cursor-pointer rounded-md shadow-lg ${
                       i === selectedProjectIndex
-                        ? "border-2 border-goldenrod"
+                        ? "border-2 border-coolBlue"
                         : "border border-platinum"
                     }`}
                     src={item.image.src}

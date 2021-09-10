@@ -25,7 +25,7 @@ export default function Contact() {
         ></link>
       </Head>
       <Layout>
-        <section className="w-full p-10 lg:w-9/12 lg:ml-auto">
+        <section className="w-full p-7 md:p-10 lg:w-9/12 lg:ml-auto">
           <div id="contact">
           <p className="inline mb-5 text-4xl font-semibold">Let&apos;s <span className="text-5xl font-medium font-dawningOfaNewDay">link</span> up!</p>
           <img src="/images/daruma-doll.png" height="50px;" width="50px;" alt="daruma doll icon" className="inline mb-4"/>  

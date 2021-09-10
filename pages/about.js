@@ -18,7 +18,7 @@ export default function AboutMe() {
         ></link>
       </Head>
       <Layout>
-        <section className="w-full p-10 lg:w-9/12 lg:ml-auto">
+        <section className="w-full p-7 md:p-10 lg:w-9/12 lg:ml-auto">
           <div id="about">
             <p className="mb-5 text-4xl font-semibold">Get to know <span className="text-5xl font-medium font-dawningOfaNewDay">me</span></p>
             <div>{lorem}</div>

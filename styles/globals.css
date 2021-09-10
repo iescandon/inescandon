@@ -139,7 +139,7 @@ hr {
     /* -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1); */
-    @apply border-2 border-coolBlue;
+    @apply border-2 border-goldenrod;
 }
 
 #project-image {

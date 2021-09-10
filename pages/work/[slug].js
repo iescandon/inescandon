@@ -18,22 +18,6 @@ export default function WorkPage({ slug, name, title, description, image, github
     })
   },[title]);
 
-const lorem =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque turpis lorem, ac dictum diam dignissim non. Proin gravida viverra dui vitae suscipit. Cras ac ullamcorper magna, eget auctor massa. Donec dictum tincidunt risus, quis finibus justo luctus eget. Aliquam lacus massa, blandit tincidunt felis eget, ullamcorper finibus purus. Vivamus euismod sem quis condimentum feugiat. Duis ornare malesuada ligula, id porta nisl finibus ut. Cras volutpat eu est eu porta. Integer hendrerit porta justo interdum vestibulum. Morbi sit amet tortor tellus.";
-  // const changeSite = (x) => {
-  //   console.log(selectedProjectIndex);
-  //   console.log(x);
-  //   const newIndex = selectedProjectIndex + x;
-  //   console.log(newIndex)
-  //   setSelectedProjectIndex(newIndex);
-  //   work.map((item, i)=>{
-  //     if (i === newIndex) {
-  //     console.log(item.slug);
-  //     window.location.href = `/work/${item.slug}`;
-  //     }
-  //   })
-  // }
-
   return (
     <>
       <Head>
@@ -45,7 +29,7 @@ const lorem =
         ></link>
       </Head>
       <Layout>
-        <section className="flex flex-col w-full p-10 ml-auto lg:w-9/12 lg:min-h-screen ">
+        <section className="flex flex-col w-full ml-auto p-7 md:p-10 lg:w-9/12 lg:min-h-screen ">
           <div className="top-work">
           <div className="flex flex-row items-center mb-5">
             <p className="text-4xl font-semibold uppercase">{name}</p>
@@ -62,9 +46,6 @@ const lorem =
                       }
             }}></i></a>
           </div>
-          {/* <div>{description}</div> */}
-          {/* <div className="flex flex-row"> */}
-            {/* {selectedProjectIndex !== 0 ? <i className="mx-auto my-auto text-3xl cursor-pointer fas fa-chevron-left" onClick={() => {changeSite(-1)}}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-left"></i>} */}
             { image.gif ? 
             // <a href={live_url} target="_blank" rel="noreferrer" className="w-full mx-auto md:w-3/4">
             <a href={live_url} target="_blank" rel="noreferrer">
@@ -74,8 +55,6 @@ const lorem =
               <img className="w-full mx-auto my-5 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.src} alt={image.alt}></img>
             </a>
             }
-            {/* {selectedProjectIndex !== 4 ? <i className="mx-auto my-auto text-3xl cursor-pointer fas fa-chevron-right" onClick={() => {changeSite(1)}}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-right"></i>} */}
-          {/* </div> */}
           <div>{description}</div>
           </div>
           <div className="relative mt-10">
