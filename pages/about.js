@@ -26,7 +26,7 @@ export default function AboutMe() {
             <div className="mt-5">
               <div className="grid grid-cols-4">
                 <img src="/images/teaching.jpg" alt="" className="col-span-2 p-1"/>
-                <img src="/images/jonah-coding.jpg" alt="" className="col-span-2 p-1"/>
+                <img src="/images/coding.jpg" alt="" className="col-span-2 p-1"/>
               </div>
               <div className="grid grid-cols-4">
                 <img src="/images/mtb.png" alt="" className="col-span-1 p-1"/>
