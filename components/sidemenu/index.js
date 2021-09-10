@@ -5,7 +5,7 @@ import { work } from "../../lib/data";
 export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex, image}) {
   return (
       <div className="">
-          <ul className="flex flex-row justify-center w-full">
+          <ul className="flex flex-row justify-center w-full mb-5 lg:mb-0">
           {work.map((item, i) => {
             // if(i !== selectedProjectIndex) {
             return (
