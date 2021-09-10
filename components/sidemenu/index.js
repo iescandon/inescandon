@@ -4,7 +4,7 @@ import { work } from "../../lib/data";
 
 export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex, image}) {
   return (
-      <div className="mt-5 overflow-auto">
+      <div className="">
           <ul className="flex flex-row justify-center w-full">
           {work.map((item, i) => {
             // if(i !== selectedProjectIndex) {
@@ -16,7 +16,7 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
                     id="menu-image"
                     className={`flex flex-row cursor-pointer rounded-md shadow-lg ${
                       i === selectedProjectIndex
-                        ? "border-2 border-coolBlue"
+                        ? "border-2 border-goldenrod"
                         : "border border-platinum"
                     }`}
                     src={item.image.src}

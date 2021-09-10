@@ -23,7 +23,7 @@ export default function Resume() {
             <button href="" className="self-end w-2/5 p-3 my-10 text-black md:transition md:duration-200 md:ease-in-out md:hover:text-white md:hover:bg-coolBlue bg-goldenrod md:w-1/5">
               Download Resume
             </button> 
-            <hr className="mb-10 border-t-2 border-platinum"></hr>
+            <hr className="mb-10 border-t-2 border-coolBlue"></hr>
             <p className="text-3xl font-semibold">Skills</p>
             <div className="flex flex-row flex-wrap justify-between">
               <ul className="mt-5">
@@ -61,7 +61,7 @@ export default function Resume() {
                 <li>Webflow</li>
               </ul>
             </div>     
-            <hr className="my-10 border-t-2 border-platinum"></hr>   
+            <hr className="my-10 text-platinum"></hr>   
             <div>
               <p className="mb-5 text-3xl font-semibold">Experience</p>
               <section className="mb-5">
@@ -95,7 +95,7 @@ export default function Resume() {
                 </ul>
               </section>
             </div>
-            <hr className="my-10 border-t-2 border-platinum"></hr>   
+            <hr className="my-10 text-platinum"></hr>   
             <div>
               <p className="mb-5 text-3xl font-semibold">Education</p>
               <section className="grid grid-cols-4 mb-5">
