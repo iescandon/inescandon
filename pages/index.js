@@ -33,7 +33,7 @@ export default function Home() {
             <SocialIcons />
           </ul>
             <img src="/images/houston.jpg" alt="houston texas city skyline" className="hidden w-full mb-10 lg:block md:col-span-2"></img>
-            <hr className="col-span-2 my-3 shadow border-silver lg:shadow-none lg:border-t-2 lg:border-coolBlue"></hr>
+            <hr className="col-span-2 my-3 border-t-2 border-platinum lg:border-coolBlue"></hr>
             {work.map((item, i) => (
               <>
               <div className="my-auto mr-5 md:col-span-1">
