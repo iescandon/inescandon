@@ -13,12 +13,12 @@ function MyForm() {
     });
     if (ok) {
       form.reset();
-      // setTimeout(() => {
-      //   setServerState({
-      //     submitting: false,
-      //     status: null,
-      //   })
-      //   }, 4000);
+      setTimeout(() => {
+        setServerState({
+          submitting: false,
+          status: null,
+        })
+        }, 3000);
       }
   };
   const handleOnSubmit = e => {
@@ -57,7 +57,7 @@ function MyForm() {
           Send it!
         </button>
         {serverState.status && (
-          <p className={`absolute rounded top-5 right-5 p-5 bg-coolBlue text-white ${!serverState.status.ok ? "errorMsg" : ""}`}>
+          <p className={`absolute rounded top-5 right-5 py-6 px-12 bg-black font-dawningOfaNewDay text-5xl text-white ${!serverState.status.ok ? "errorMsg" : ""}`}>
             {serverState.status.msg}
           </p>
         )}
