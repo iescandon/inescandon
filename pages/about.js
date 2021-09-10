@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
 import SideNav from "../components/sidenav";
-import AboutQuiz from '../components/about-quiz';
 import Layout from '../components/layout';
 
 export default function AboutMe() {
