@@ -2,8 +2,6 @@ import Head from "next/head";
 import Layout from '../components/layout';
 
 export default function AboutMe() {
-  const lorem =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque turpis lorem, ac dictum diam dignissim non. Proin gravida viverra dui vitae suscipit. Cras ac ullamcorper magna, eget auctor massa. Donec dictum tincidunt risus, quis finibus justo luctus eget. Aliquam lacus massa, blandit tincidunt felis eget, ullamcorper finibus purus. Vivamus euismod sem quis condimentum feugiat. Duis ornare malesuada ligula, id porta nisl finibus ut. Cras volutpat eu est eu porta. Integer hendrerit porta justo interdum vestibulum. Morbi sit amet tortor tellus.";
   return (
     <>
       <Head>
@@ -19,7 +17,7 @@ export default function AboutMe() {
         <section className="w-full p-7 md:p-10 lg:w-9/12 lg:ml-auto">
           <div id="about">
             <p className="mb-5 text-4xl font-semibold">Get to know <span className="text-5xl font-medium font-dawningOfaNewDay">me</span></p>
-            <div>{lorem}</div>
+            <div>Hey there!</div>
             <div className="mt-5">
               <div className="grid grid-cols-4">
                 <img src="/images/teaching.jpg" alt="" className="col-span-2 p-1"/>

@@ -18,9 +18,11 @@ export default function Resume() {
           <div id="resume">
             <p className="mb-5 text-4xl font-semibold">Check out my <span className="text-5xl font-medium font-dawningOfaNewDay">resume</span></p>
             <div>My name is Inez Escandon and I&apos;m a Full Stack Web Developer from Houston, TX. Extremely passionate about creating user-centric designs and collaborating with others to develop simple, clean, and meaningful mobile and web applications. I am a highly motivated self-starter who is fully committed to proving herself in a new career, and would be a great asset to any company. Open to new opportunities!</div>
-            <button href="" className="self-end w-2/5 p-3 my-10 text-black md:transition md:duration-200 md:ease-in-out md:hover:text-white md:hover:bg-coolBlue bg-goldenrod md:w-1/5">
+            <a href="https://drive.google.com/file/d/1q5DfZGa9opI0e52uByB0jCVLsrzPr23F/view" target="_blank" rel="noreferrer" tabIndex={-1}>
+            <button className="self-end w-2/5 p-3 my-10 text-black md:transition md:duration-200 md:ease-in-out md:hover:text-white md:hover:bg-coolBlue bg-goldenrod md:w-1/5">
               Download Resume
             </button> 
+            </a>
             <hr className="mb-10 border-t-2 border-coolBlue"></hr>
             <p className="text-3xl font-semibold">Skills</p>
             <div className="flex flex-row flex-wrap justify-between">
@@ -66,30 +68,31 @@ export default function Resume() {
                 <p className="font-semibold uppercase">Web Developer, Poetic Systems</p>
                 <p className="italic">Houston, TX (Mar 2021 - Present)</p>
                 <ul className="pl-8 list-disc">
-                  <li>Support wordpress/drupal/wbflow</li>
-                  <li>Houston food bank/</li>
-                  <li>Camden</li>
+                  <li>Completed support tickets for current Wordpress, Webflow, and Drupal projects all across the company.</li>
+                  <li>Developed/refactored features to the Camden website and Houston Food Bank’s project management website that improved user performance and experience.</li>
+                  <li>Implemented accessibility features to Camden’s website to ensure ADA compliance.</li>
+                  <li>Communicated effectively and worked collaboratively with fellow developers, project managers, and clients to ensure client satisfaction.</li>
                 </ul>
               </section>
               <section className="mb-5">
-                <p className="font-semibold uppercase">Full Stack Web Development Bootcamp: Tutor, 2U Inc</p>
+                <p className="font-semibold uppercase">Full Stack Web Development Bootcamp Tutor, 2U Inc</p>
                 <p className="italic">Houston, TX (Jan 2021 - Present)</p>
                 <ul className="pl-8 list-disc">
-                  <li>Assist current bootcamp students with their studies and projects.</li>
+                  <li>Assist current students with their studies and projects.</li>
                 </ul>
               </section>
               <section className="mb-5">
-                <p className="font-semibold uppercase">Full Stack Web Development Bootcamp: Teacher Assistant, 2U Inc</p>
+                <p className="font-semibold uppercase">Full Stack Web Development Bootcamp Teacher Assistant, 2U Inc</p>
                 <p className="italic">Houston, TX (Jan 2021 - Jul 2021)</p>
                 <ul className="pl-8 list-disc">
-                  <li>Support wordpress/drupal/wbflow</li>
+                  <li>Worked alongside instructor to teach and support students.</li>
                 </ul>
               </section>
               <section className="mb-5">
                 <p className="font-semibold uppercase">Bilingual Elementary Teacher, Various Districts</p>
                 <p className="italic">Houston, TX (Aug 2010 - Jan 2021)</p>
                 <ul className="pl-8 list-disc">
-                  <li>Support wordpress/drupal/wbflow</li>
+                  <li>Taught grades K-2 as a Bilingual, Dual Language, & PE teacher.</li>
                 </ul>
               </section>
             </div>
