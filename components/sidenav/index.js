@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import SocialIcons from '../social-icons';
 
 export default function SideNav({ selectedSection }) {

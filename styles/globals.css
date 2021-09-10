@@ -106,7 +106,6 @@ aside {
 
 @media (min-width: 769px) {
   #menu-image:hover {
-    /* @apply border-2 border-coolBlue; */
     @apply transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110;
   }
 }

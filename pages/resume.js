@@ -1,6 +1,4 @@
-import { useState } from "react";
 import Head from "next/head";
-import SideNav from "../components/sidenav";
 import Layout from '../components/layout';
 
 export default function Resume() {

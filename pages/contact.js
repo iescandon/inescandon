@@ -1,9 +1,6 @@
-import { useState } from "react";
 import Head from "next/head";
-import SideNav from "../components/sidenav";
 import Layout from '../components/layout';
 import ContactForm from '../components/contact-form';
-import SocialIcons from '../components/social-icons';
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
@@ -11,8 +8,6 @@ export default function Contact() {
   if (state.succeeded) {
       return <p>Thanks for joining!</p>;
   }
-  const lorem =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque turpis lorem, ac dictum diam dignissim non.";
   return (
     <>
       <Head>

@@ -1,11 +1,8 @@
 import Head from "next/head";
 import { work } from "../../lib/data";
-import Image from "next/image";
-import Link from "next/link";
 import { useState, useEffect } from 'react';
 import SideMenu from "../../components/sidemenu";
 import Layout from '../../components/layout';
-import SideNav from "../../components/sidenav";
 
 export default function WorkPage({ slug, name, title, description, image, github, live_url }) {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState();
@@ -46,15 +43,9 @@ export default function WorkPage({ slug, name, title, description, image, github
                       }
             }}></i></a>
           </div>
-            { image.gif ? 
-            // <a href={live_url} target="_blank" rel="noreferrer" className="w-full mx-auto md:w-3/4">
-            <a href={live_url} target="_blank" rel="noreferrer">
-              <img className="w-full mx-auto my-8 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.gif} alt={image.alt}></img>
-            </a> :
-            <a href={live_url} target="_blank" rel="noreferrer">
-              <img className="w-full mx-auto my-5 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.src} alt={image.alt}></img>
-            </a>
-            }
+          <a href={live_url} target="_blank" rel="noreferrer">
+            <img className="w-full mx-auto my-8 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.gif} alt={image.alt}></img>
+          </a>
           <div>{description}</div>
           </div>
           <div className="relative mt-10 mb-5">

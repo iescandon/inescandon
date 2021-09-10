@@ -1,6 +1,4 @@
 import Head from "next/head";
-import { useState } from "react";
-import SideNav from "../components/sidenav";
 import { work } from "../lib/data.js";
 import Link from "next/link";
 import Layout from '../components/layout';

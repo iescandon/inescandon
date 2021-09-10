@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { work } from "../../lib/data";
 
 export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex, image}) {
