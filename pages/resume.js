@@ -40,11 +40,12 @@ export default function Resume() {
                 <li>NextJS</li>
                 <li>Angular</li>
                 <li>Redux</li>
-                <li>Web APIs/Rest APIs</li>
+                <li>Web APIs</li>
                 <li>Apollo</li>
               </ul>
               <ul className="mt-5">
                 <li className="font-semibold uppercase">Back-End Tools</li>
+                <li>Rest APIs</li>
                 <li>GraphQL</li>
                 <li>Node.js</li>
                 <li>Express</li>
