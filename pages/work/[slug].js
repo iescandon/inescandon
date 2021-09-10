@@ -32,7 +32,7 @@ export default function WorkPage({ slug, name, title, description, image, github
         <section className="flex flex-col w-full ml-auto p-7 md:p-10 lg:w-9/12 lg:min-h-screen ">
           <div className="top-work">
           <div className="flex flex-row items-center mb-5">
-            <p className="text-4xl font-semibold uppercase">{name}</p>
+            <p className="text-4xl font-semibold">{name}</p>
             <a href={github} target="_blank" rel="noreferrer" tabIndex={-1}><i className="ml-4 text-3xl md:transition md:duration-200 md:ease-in-out fab fa-github-square text-coolBlue md:hover:text-goldenrod" tabIndex={0} onKeyDown={(e)=>{
                       if (e.key === "Enter" || "") {
                         const page = github;
