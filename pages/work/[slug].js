@@ -62,7 +62,7 @@ const lorem =
                       }
             }}></i></a>
           </div>
-          <div>{description}</div>
+          {/* <div>{description}</div> */}
           {/* <div className="flex flex-row"> */}
             {/* {selectedProjectIndex !== 0 ? <i className="mx-auto my-auto text-3xl cursor-pointer fas fa-chevron-left" onClick={() => {changeSite(-1)}}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-left"></i>} */}
             { image.gif ? 
@@ -76,10 +76,11 @@ const lorem =
             }
             {/* {selectedProjectIndex !== 4 ? <i className="mx-auto my-auto text-3xl cursor-pointer fas fa-chevron-right" onClick={() => {changeSite(1)}}></i> : <i className="mx-auto my-auto text-3xl text-transparent fas fa-chevron-right"></i>} */}
           {/* </div> */}
+          <div>{description}</div>
           </div>
           <div className="relative mt-10">
             <hr className="col-span-1 my-5 border-t-2 border-coolBlue md:col-span-2"></hr>  
-            <p className="absolute top-0 pr-2 mt-1.5 text-xl font-semibold uppercase bg-white">Other Projects</p> 
+            <p className="absolute top-0 pr-2 mt-1.5 text-xl font-semibold uppercase bg-white">Other Work</p> 
           </div>
 
         <SideMenu selectedProjectIndex={selectedProjectIndex} setSelectedProjectIndex={setSelectedProjectIndex} image={image} />

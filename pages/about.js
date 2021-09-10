@@ -22,7 +22,6 @@ export default function AboutMe() {
           <div id="about">
             <p className="mb-5 text-4xl font-semibold">Get to know <span className="text-5xl font-medium font-dawningOfaNewDay">me</span></p>
             <div>{lorem}</div>
-            {/* <img className="" src="./images/daruma-doll.png" height="100px;" width="100px;"></img> */}
             <div className="mt-5">
               <div className="grid grid-cols-4">
                 <img src="/images/teaching.jpg" alt="" className="col-span-2 p-1"/>

@@ -7,9 +7,7 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
       <div className="mt-5 overflow-auto">
           <ul className="flex flex-row justify-center w-full">
           {work.map((item, i) => {
-            if(i !== selectedProjectIndex) {
-
-            
+            // if(i !== selectedProjectIndex) {
             return (
               <Link href={`/work/${item.slug}`} key={item.title}>
                 <li className="mx-1 md:m-2 menu-item">
@@ -18,7 +16,7 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
                     id="menu-image"
                     className={`flex flex-row cursor-pointer rounded-md shadow-lg ${
                       i === selectedProjectIndex
-                        ? "border-2 border-coolBlue"
+                        ? "border-2 border-goldenrod"
                         : "border border-platinum"
                     }`}
                     src={item.image.src}
@@ -36,7 +34,7 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
                 </li>
               </Link>
             );
-          }
+          // }
           })}
         </ul>
       </div>
