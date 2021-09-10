@@ -66,6 +66,10 @@ aside {
   width: 90px;
 }
 
+#project-image {
+  @apply border border-platinum;
+}
+
 @media (max-width: 1023px) {
   #sidenav {
     justify-content: space-between;

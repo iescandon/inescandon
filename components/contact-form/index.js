@@ -13,12 +13,12 @@ function MyForm() {
     });
     if (ok) {
       form.reset();
-      setTimeout(() => {
-        setServerState({
-          submitting: false,
-          status: null,
-        })
-        }, 4000);
+      // setTimeout(() => {
+      //   setServerState({
+      //     submitting: false,
+      //     status: null,
+      //   })
+      //   }, 4000);
       }
   };
   const handleOnSubmit = e => {
