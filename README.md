@@ -6,7 +6,7 @@ https://inescandon.vercel.app/
 
 ## Description
 
-![Alt Text](./public/images/resume1.png) ![Alt Text](./public/images/resume2.png) ![Alt Text](./public/images/resume3.png)`
+![Alt Text](./public/images/resume.png)`
 
 This application is a client-side application that serves as my portfolio. Users can click on work to view websites I have created independently and collaboratively. Users can click on about and resume to learn more about me and my skills. Users can click on contact and send me a message using the contact form on the page. Created with Next.JS and styled with Tailwind CSS. Mobile responsive.
 
