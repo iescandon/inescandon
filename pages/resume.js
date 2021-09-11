@@ -66,7 +66,8 @@ export default function Resume() {
             <div>
               <p className="mb-5 text-3xl font-semibold">Experience</p>
               <section className="mb-5">
-                <p className="font-semibold uppercase">Web Developer, Poetic Systems</p>
+                <p className="font-semibold">Poetic Systems</p>
+                <p className="font-semibold uppercase">Web Developer</p>
                 <p className="italic">Houston, TX (Mar 2021 - Present)</p>
                 <ul className="pl-8 list-disc">
                   <li>Completed support tickets for current Wordpress, Webflow, and Drupal projects all across the company.</li>
@@ -76,21 +77,24 @@ export default function Resume() {
                 </ul>
               </section>
               <section className="mb-5">
-                <p className="font-semibold uppercase">Full Stack Web Development Bootcamp Tutor, 2U Inc</p>
+                <p className="font-semibold">2U Inc</p>
+                <p className="font-semibold uppercase">Full Stack Web Development Bootcamp Tutor</p>
                 <p className="italic">Houston, TX (Jan 2021 - Present)</p>
                 <ul className="pl-8 list-disc">
                   <li>Assist current students with their studies and projects.</li>
                 </ul>
               </section>
               <section className="mb-5">
-                <p className="font-semibold uppercase">Full Stack Web Development Bootcamp Teacher Assistant, 2U Inc</p>
+                <p className="font-semibold">2U Inc</p>
+                <p className="font-semibold uppercase">Full Stack Web Development Bootcamp Teacher Assistant</p>
                 <p className="italic">Houston, TX (Jan 2021 - Jul 2021)</p>
                 <ul className="pl-8 list-disc">
                   <li>Worked alongside instructor to teach and support students.</li>
                 </ul>
               </section>
               <section className="mb-5">
-                <p className="font-semibold uppercase">Bilingual Elementary Teacher, Various Districts</p>
+                <p className="font-semibold">Various Districts</p>
+                <p className="font-semibold uppercase">Bilingual Elementary Teacher</p>
                 <p className="italic">Houston, TX (Aug 2010 - Jan 2021)</p>
                 <ul className="pl-8 list-disc">
                   <li>Taught grades K-2 as a Bilingual, Dual Language, & PE teacher.</li>
