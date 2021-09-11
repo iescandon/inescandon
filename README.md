@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Inez Escandon's Portfolio [GitHub license](https://img.shields.io/badge/license-MIT%20License-blue.svg)
 
-## Getting Started
+# Live Site
 
-First, run the development server:
+https://inescandon.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Alt Text](./public/images/resume1.png) ![Alt Text](./public/images/resume2.png) ![Alt Text](./public/images/resume3.png)`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This application is a client-side application that serves as my portfolio. Users can click on work to view websites I have created independently and collaboratively. Users can click on about and resume to learn more about me and my skills. Users can click on contact and send me a message using the contact form on the page. Created with Next.JS and styled with Tailwind CSS. Mobile responsive.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Table of Contents
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [License](#license)
+- [Credits](#credits)
+- [Tests](#tests)
+- [Questions](#questions)
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+In order to install this project, you must login to GitHub and go to github.com/iescandon/inescandon. Once there you will click on the green button that says clone or download. You will be given choices on how to download: using the ssh/html key or downloading the zip file.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Using SSH/HTML Key: You will copy the link shown and open up either terminal (mac: pre-installed) or gitbash (pc: must be installed). Once the application is open, you will type git clone _paste url here_. Once you have cloned the htx-tacos repo, cd into the repo and type "open ." to open the folder which contains all files used for the website. You can also type "code ." to open the repo in VS code.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Using Download ZIP: Click on Download Zip. Locate the file and double click it to unzip the file. Locate the unzipped folder and and open it. All the files for the website will be within this folder.
 
-## Deploy on Vercel
+## Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Simply click on the live link listed above and use the website as normal.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Technologies
+
+- Next.JS
+- Tailwind CSS
+- Formspree
+
+## License
+
+Copyright (c) [2020][inezescandon]  
+The license is MIT License.  
+Read more about it at https://opensource.org/licenses/MIT.
+
+## Credits
+
+None
+
+## Tests
+
+No tests available.
+
+## Questions
+
+If you have any additional questions please contact me at iescan4@gmail.com.  
+GitHub: https://github.com/iescandon
+
