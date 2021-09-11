@@ -66,7 +66,7 @@ aside {
   width: 90px;
 }
 
-#project-image {
+.project-image {
   @apply border border-platinum;
 }
 
@@ -109,7 +109,7 @@ aside {
 }
 
 @media (min-width: 769px) {
-  #menu-image:hover {
+  .menu-image:hover {
     @apply transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110;
   }
 }

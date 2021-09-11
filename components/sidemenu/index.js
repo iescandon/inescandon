@@ -12,8 +12,7 @@ export default function SideMenu({selectedProjectIndex, setSelectedProjectIndex,
                 <li className="mx-1 md:mx-2 menu-item">
                   <img
                     key={item.slug}
-                    id="menu-image"
-                    className={`flex flex-row cursor-pointer rounded-md shadow-lg ${
+                    className={`menu-image flex flex-row cursor-pointer rounded-md shadow-lg ${
                       i === selectedProjectIndex
                         ? "border-2 border-goldenrod"
                         : "border border-platinum"

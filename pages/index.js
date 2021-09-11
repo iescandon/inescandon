@@ -45,8 +45,7 @@ export default function Home() {
 
               <div className="card-wrapper">
                     <img
-                      id="project-image"
-                      className="w-full rounded-md shadow-lg image"
+                      className="w-full rounded-md shadow-lg project-image image"
                       src={item.image.src}
                       alt={item.image.alt}
                     ></img>

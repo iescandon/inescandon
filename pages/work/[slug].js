@@ -19,6 +19,8 @@ export default function WorkPage({ slug, name, title, description, image, github
     <>
       <Head>
         <title>Inez Escandón | {name}</title>
+        <meta name="description" content="Hola! My name is Inez. I'm a Full Stack Web Developer based out of Houston, TX." />
+        <meta name="keywords" content="inez,escandon,software,web,developer,web,development,design,houston,texas" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
