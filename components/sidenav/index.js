@@ -43,7 +43,6 @@ export default function SideNav({ selectedSection }) {
             return (
               <Link key={item.slug} href={`/${item.slug}`}>
                 <li
-                  id="section-nav"
                   tabIndex={0}
                   className={`p-2 cursor-pointer my-2 text-center md:hover:text-goldenrod md:transition md:duration-200 md:ease-in-out ${
                     currentRoute === selectedRoute ? "text-coolBlue" : ""
