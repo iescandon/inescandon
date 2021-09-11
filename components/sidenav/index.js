@@ -47,6 +47,7 @@ export default function SideNav({ selectedSection }) {
                   className={`p-2 cursor-pointer my-2 text-center md:hover:text-goldenrod md:transition md:duration-200 md:ease-in-out ${
                     currentRoute === selectedRoute ? "text-coolBlue" : ""
                   }`}
+                  key={item.slug}
                   onKeyDown={(e)=>{
                     if (e.key === "Enter" || "") {
                       window.location.href = `/${item.slug}`;
