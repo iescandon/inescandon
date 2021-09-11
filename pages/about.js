@@ -23,14 +23,14 @@ export default function AboutMe() {
             <div className="mt-3">Aside from coding, I love to spend my spare time with my dog Jonah, going to the gym, riding my mountain bike, training brazilian jiu jitsu (BJJ), dancing various latin and indian dances, or spending time with friends and family. Feel free to <a href="/contact" className="text-coolBlue md:hover:text-goldenrod">contact me</a> if you have any additional questions!</div>
             <div className="mt-7">
               <div className="grid grid-cols-4">
-                <img src="/images/teaching.jpg" alt="" className="col-span-2 p-0.5"/>
-                <img src="/images/coding.png" alt="" className="col-span-2 p-0.5"/>
+                <img src="/images/teaching.webp" alt="" className="col-span-2 p-0.5"/>
+                <img src="/images/coding.webp" alt="" className="col-span-2 p-0.5"/>
               </div>
               <div className="grid grid-cols-4">
-                <img src="/images/mtb.png" alt="" className="col-span-1 p-0.5"/>
-                <img src="/images/bjj.jpg" alt="" className="col-span-1 p-0.5"/>
-                <img src="/images/bhangra.jpg" alt="" className="col-span-1 p-0.5"/>
-                <img src="/images/mtb1.jpg" alt="" className="col-span-1 p-0.5"/>
+                <img src="/images/mtb.webp" alt="" className="col-span-1 p-0.5"/>
+                <img src="/images/bjj.webp" alt="" className="col-span-1 p-0.5"/>
+                <img src="/images/bhangra.webp" alt="" className="col-span-1 p-0.5"/>
+                <img src="/images/mtb1.webp" alt="" className="col-span-1 p-0.5"/>
               </div>
             </div>
           </div>

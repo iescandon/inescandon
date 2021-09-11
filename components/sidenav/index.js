@@ -15,7 +15,7 @@ export default function SideNav({ selectedSection }) {
   return (
       <nav id="sidenav" className="relative inset-0 flex items-center justify-center w-full p-5 overflow-auto text-center border-b shadow-md lg:border-r border-silver lg:fixed lg:w-3/12 lg:min-h-screen lg:flex-col lg:shadow-lg">
         <Link href="/">
-        <img id="logo" src="/images/blue-logo.png" alt="blue logo for website" className="inline cursor-pointer lg:hidden" height="50px;" width="50px;"           tabIndex={0}
+        <img id="logo" src="/images/blue-logo.webp" alt="blue logo for website" className="inline cursor-pointer lg:hidden" height="50px;" width="50px;"           tabIndex={0}
             onKeyDown={(e)=>{
               if (e.key === "Enter" || "") {
                  window.location.href = '/';
@@ -25,7 +25,7 @@ export default function SideNav({ selectedSection }) {
         <Link href="/">
         <img
           className="hidden w-2/3 transition duration-200 ease-in-out border-2 rounded-full cursor-pointer border-coolBlue md:w-1/6 lg:w-3/5 hover:border-goldenrod lg:block"
-          src="/images/inez-pic.png"
+          src="/images/inez-pic.webp"
           alt="hispanic girl with curly hair and small yorkie dog"
           tabIndex={0}
             onKeyDown={(e)=>{
@@ -35,8 +35,8 @@ export default function SideNav({ selectedSection }) {
           }}
         ></img>
         </Link>
-        <h1 className="hidden mt-3 text-5xl font-dawningOfaNewDay lg:block my-name">Inez Escandón</h1>
-        <h4 className="hidden font-semibold uppercase lg:block role">Full Stack Web Developer</h4>
+        <p className="hidden mt-3 text-5xl font-dawningOfaNewDay lg:block my-name">Inez Escandón</p>
+        <p className="hidden font-semibold uppercase lg:block role">Full Stack Web Developer</p>
         <ul className="flex flex-row ml-auto lg:mt-3 lg:flex-col lg:ml-0" id="nav-items">
           {sections.map((item, i) => {
             const currentRoute = `/${item.slug}`

@@ -111,7 +111,7 @@ export default function Resume() {
                   <p>Certificate for Full-Stack Web Development</p>
                 </div>
                 <div className="col-span-4 my-2 md:my-auto md:col-span-1">
-                  <img src="/images/bootcamp-certificate.png" alt="ut austin bootcamp certificate" className="border resumeimg border-platinum"/>
+                  <img src="/images/bootcamp-certificate.webp" alt="ut austin bootcamp certificate" className="border resumeimg border-platinum"/>
                 </div>
               </section>
               <section className="grid grid-cols-4 mb-5">
@@ -121,7 +121,7 @@ export default function Resume() {
                   <p>Masters in Instructional Technology</p>
                 </div>
                 <div className="col-span-4 my-2 md:my-auto md:col-span-1">
-                  <img src="/images/rowdy.png" alt="ut san antonio roadrunner logo" className="resumeimg"/>
+                  <img src="/images/rowdy.webp" alt="ut san antonio roadrunner logo" className="resumeimg"/>
                 </div>
               </section>
               <section className="grid grid-cols-4 mb-5">
@@ -131,7 +131,7 @@ export default function Resume() {
                   <p>Bachelors in Bilingual Education</p>
                 </div>
                 <div className="col-span-4 my-2 md:my-auto md:col-span-1">
-                <img src="/images/longhorn.png" alt="ut austin longhorn logo" className="resumeimg"/>
+                <img src="/images/longhorn.webp" alt="ut austin longhorn logo" className="resumeimg"/>
                 </div>
               </section>
             </div>

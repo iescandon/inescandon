@@ -20,18 +20,18 @@ export default function Home() {
       <Layout>
         <section className="w-full p-7 md:p-10 lg:w-9/12 lg:ml-auto">
           <div id="work" className="flex flex-col w-full md:grid md:grid-cols-2">
-            <p className="mb-5 text-4xl font-semibold md:col-span-2">Hola! My name is <span className="pr-1 text-5xl font-medium font-dawningOfaNewDay">Inez</span>. I'm a Full Stack Web Developer based out of Houston, TX. <img src="/images/texas.png" alt="texas icon" height="30px" width="30px" className="inline pb-1"></img></p>
+            <p className="mb-5 text-4xl font-semibold md:col-span-2">Hola! My name is <span className="pr-1 text-5xl font-medium font-dawningOfaNewDay">Inez</span>. I'm a Full Stack Web Developer based out of Houston, TX. <img src="/images/texas.webp" alt="texas icon" height="30px" width="30px" className="inline pb-1"></img></p>
             <div className="flex justify-center w-full col-span-2">
                 <img
                   className="w-2/4 mb-5 rounded-full md:w-1/3 lg:hidden"
-                  src="/images/inez-pic.png"
+                  src="/images/inez-pic.webp"
                   alt="hispanic girl with curly hair and small yorkie dog"
                 ></img>
             </div>
           <ul className="flex flex-row justify-center inline mb-5 lg:hidden md:col-span-2">
             <SocialIcons />
           </ul>
-            <img src="/images/houston.jpg" alt="houston texas city skyline" className="hidden w-full mb-10 lg:block md:col-span-2"></img>
+            <img src="/images/houston.webp" alt="houston texas city skyline" className="hidden w-full mb-10 lg:block md:col-span-2"></img>
             <hr className="col-span-2 my-3 border-t-2 border-platinum lg:border-coolBlue"></hr>
             {work.map((item, i) => (
               <>
