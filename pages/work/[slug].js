@@ -6,7 +6,6 @@ import Layout from '../../components/layout';
 
 export default function WorkPage({ slug, name, title, description, image, github, live_url }) {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState();
-
   useEffect(() => {
     work.map((item, i)=>{
       if (item.title === title) {
@@ -14,7 +13,6 @@ export default function WorkPage({ slug, name, title, description, image, github
       }
     })
   },[title]);
-
   return (
     <>
       <Head>
@@ -45,9 +43,14 @@ export default function WorkPage({ slug, name, title, description, image, github
                       }
             }}></i></a>
           </div>
-          <a href={live_url} target="_blank" rel="noreferrer">
+          {/* <a href={live_url} target="_blank" rel="noreferrer">
             <img className="w-full mx-auto my-8 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.gif} alt={image.alt}></img>
-          </a>
+          </a> */}
+          <video className="w-full mx-auto my-8 border rounded-md shadow-lg md:w-3/4 border-platinum" key={image.gif} loop autoPlay muted>
+            <source src={image.gif}
+                    type="video/webm" />
+            Sorry, your browser doesn&apos;t support embedded videos.
+          </video>
           <div>{description}</div>
           </div>
           <div className="relative mt-10 mb-5">
