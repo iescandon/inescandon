@@ -46,7 +46,8 @@ export default function WorkPage({ slug, name, title, description, image, github
           {/* <a href={live_url} target="_blank" rel="noreferrer">
             <img className="w-full mx-auto my-8 border rounded-md shadow-lg md:w-3/4 border-platinum" key={slug} src={image.gif} alt={image.alt}></img>
           </a> */}
-          <video className="w-full mx-auto my-8 border rounded-md shadow-lg md:w-3/4 border-platinum" key={image.gif} loop autoPlay muted>
+          <img className="w-full mx-auto my-8 border rounded-md shadow-lg md:w-3/4 border-platinum lg:hidden" key={slug} src={image.src} alt={image.alt}></img>
+          <video className="hidden w-full mx-auto my-8 border rounded-md shadow-lg lg:block md:w-3/4 border-platinum" key={image.gif} loop autoPlay muted>
             <source src={image.gif}
                     type="video/webm" />
             Sorry, your browser doesn&apos;t support embedded videos.
