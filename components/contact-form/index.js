@@ -39,7 +39,7 @@ function MyForm() {
   };
   return (
       <form className="flex flex-col focus:outline-goldenrod" onSubmit={handleOnSubmit}>
-        <label className="mt-5 font-semibold" for="reason">I'm contacting you because</label>
+        <label className="mt-5 font-semibold" htmlFor="reason">I'm contacting you because</label>
   <select name="reason" id="reason" className="border rounded border-platinum">
     <option value="I'd like for you to make me a website">I'd like for you to make me a website</option>
     <option value="I'd like to interview you for a job">I'd like to interview you for a job</option>

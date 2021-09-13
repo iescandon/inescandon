@@ -35,26 +35,24 @@ export default function Home() {
             <hr className="col-span-2 my-3 border-t-2 border-platinum lg:border-coolBlue"></hr>
             {work.map((item, i) => (
               <>
-              <div className="my-auto mr-5 md:col-span-1">
+              <div className="my-auto mr-5 md:col-span-1" key={item.slug}>
                 <p className="pt-3 my-5 text-2xl font-semibold md:pt-0 md:mt-0 md:mb-5">{item.title}</p>
-                {/* <p className="pt-3 my-5 italic uppercase md:pt-0 md:mt-0 md:mb-5">{item.name}</p> */}
                 <p>{item.blurb}</p>
               </div>
 
-              <div key={item.slug} className="md:col-span-1">
-
-              <div className="card-wrapper">
-                    <img
-                      className="w-full rounded-md shadow-lg project-image image"
-                      src={item.image.src}
-                      alt={item.image.alt}
-                    ></img>
-                  <Link href={`/work/${item.slug}`}>
-                    <button className="px-6 py-3 text-black readme-btn md:transition md:duration-200 md:ease-in-out md:hover:text-white md:hover:bg-coolBlue bg-goldenrod">See More</button>
-                  </Link>
-                </div>
-            </div>
-            {i + 1 !== work.length ? <hr className="col-span-2 text-platinum"></hr> : null }
+              <div key={item.name} className="md:col-span-1">
+                <div className="card-wrapper">
+                      <img
+                        className="w-full rounded-md shadow-lg project-image image"
+                        src={item.image.src}
+                        alt={item.image.alt}
+                      ></img>
+                    <Link href={`/work/${item.slug}`}>
+                      <button className="px-6 py-3 text-black readme-btn md:transition md:duration-200 md:ease-in-out md:hover:text-white md:hover:bg-coolBlue bg-goldenrod">See More</button>
+                    </Link>
+                  </div>
+              </div>
+            {i + 1 !== work.length ? <hr className="col-span-2 text-platinum" key={i}></hr> : null }
             </>
             ))}
           </div>

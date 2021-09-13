@@ -58,7 +58,6 @@ export default function WorkPage({ slug, name, title, description, image, github
             <hr className="col-span-1 my-5 border-t-2 border-coolBlue md:col-span-2"></hr>  
             <p className="absolute top-0 pr-2 mt-1.5 text-xl font-semibold uppercase bg-white">Other Work</p> 
           </div>
-
         <SideMenu selectedProjectIndex={selectedProjectIndex} setSelectedProjectIndex={setSelectedProjectIndex} image={image} />
         </section>
       </Layout>
