@@ -57,7 +57,7 @@ export default function WorkPage({ slug, name, title, description, image, github
           <div className="flex flex-row flex-wrap justify-center mb-5">
             {tools.map((tool) => {
                 return (
-                  <img src={`/tools/${tool}.png`} alt={`${tool} logo`} className="h-8 mx-3" />
+                  <img src={`/tools/${tool}.png`} alt={`${tool} logo`} className="h-8 p-1 mx-3" />
                 )
             })}
           </div>
