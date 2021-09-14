@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from 'next/image'
 import { work } from "../../lib/data";
 import { useState, useEffect } from 'react';
 import SideMenu from "../../components/sidemenu";
@@ -14,7 +13,6 @@ export default function WorkPage({ slug, name, title, description, image, github
       }
     })
   },[title]);
-  console.log(tools);
   return (
     <>
       <Head>
