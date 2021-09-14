@@ -1,10 +1,11 @@
 import Head from "next/head";
+import Image from 'next/image'
 import { work } from "../../lib/data";
 import { useState, useEffect } from 'react';
 import SideMenu from "../../components/sidemenu";
 import Layout from '../../components/layout';
 
-export default function WorkPage({ slug, name, title, description, image, github, live_url }) {
+export default function WorkPage({ slug, name, title, description, image, github, live_url, tools }) {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState();
   useEffect(() => {
     work.map((item, i)=>{
@@ -13,6 +14,7 @@ export default function WorkPage({ slug, name, title, description, image, github
       }
     })
   },[title]);
+  console.log(tools);
   return (
     <>
       <Head>
@@ -52,6 +54,13 @@ export default function WorkPage({ slug, name, title, description, image, github
                     type="video/webm" />
             Sorry, your browser doesn&apos;t support embedded videos.
           </video>
+          <div className="flex flex-row flex-wrap justify-center mb-5">
+            {tools.map((tool) => {
+                return (
+                  <img src={`/tools/${tool}.png`} alt={`${tool} logo`} className="h-8 mx-3" />
+                )
+            })}
+          </div>
           <div>{description}</div>
           </div>
           <div className="relative mt-10 mb-5">
