@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Poppins:wght@200;400;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Poppins:wght@200;400;600;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,9 +9,9 @@
   @apply font-poppins;
 }
 
-*, :focus-visible {
-  outline-color: #FFD700;
-  
+*,
+:focus-visible {
+  outline-color: #ffd700;
 }
 
 button:focus-visible {
@@ -26,8 +26,10 @@ p {
   color: #201e1a;
 }
 
-input, textarea, select {
-  padding: 10px!important;
+input,
+textarea,
+select {
+  padding: 10px !important;
 }
 
 aside {
@@ -48,18 +50,18 @@ aside {
 }
 
 .readme-btn {
-    position: absolute;
-    left: auto;
-    top: auto;
-    right: 0%;
-    bottom: 0%;
-    margin-top: 0px;
-    margin-left: 0px;
-    padding: 24px 24px;
-    border-radius: 1px;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 24px 24px;
+  border-radius: 1px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 .resumeimg {

@@ -1,13 +1,13 @@
 import SideNav from "../sidenav";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
-export default function Layout( {children, isWork, selectedSection, setSelectedSection, selectedProjectIndex, setSelectedProjectIndex, image} ) {
+export default function Layout({ children }) {
   const router = useRouter();
   const route = router.pathname;
   return (
     <main className="relative">
-      <SideNav selectedSection={route}/>
+      <SideNav selectedSection={route} />
       {children}
     </main>
-  )
+  );
 }
