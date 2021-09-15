@@ -57,7 +57,7 @@ export default function WorkPage({ slug, name, title, description, image, github
             {/* <p className="col-span-3 text-xl font-semibold uppercase md:col-span-6 lg:pr-4">Tools</p>  */}
             {tools.map((tool) => {
                 return (
-                  <img key={tool} title={tool} src={`/tools/${tool}.png`} alt={`${tool} logo`} className="place-self-center col-span-1 h-8 p-1 mx-3 lg:p-0.5 lg:mx-4" />
+                  <img key={tool} title={tool} src={`/tools/${tool}.png`} alt={`${tool} logo`} className="place-self-center col-span-1 h-7 md:h-8 p-1 mx-3 lg:p-0.5 lg:mx-4" />
                 )
             })}
           </div>
