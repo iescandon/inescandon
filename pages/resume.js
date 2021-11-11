@@ -57,6 +57,8 @@ export default function Resume() {
                 <li>CSS</li>
                 <li>Javascript</li>
                 <li>Typescript</li>
+                <li>Python</li>
+                <li>PHP</li>
               </ul>
               <ul className="mt-5">
                 <li className="font-semibold uppercase">Front-End Tools</li>
@@ -91,22 +93,47 @@ export default function Resume() {
             <div>
               <p className="mb-5 text-3xl font-semibold">Experience</p>
               <section className="mb-5">
+                <p className="font-semibold">Slalom</p>
+                <p className="font-semibold uppercase">Technology Consultant</p>
+                <p className="italic">Houston, TX (Oct 2021 - Present)</p>
+                <ul className="pl-8 list-disc">
+                  <li>
+                    Engage in communication with business professionals, stakeholders, end-users, and customers in face-to-face and conference call meetings.
+                  </li>
+                  <li>
+                    Establish a strong client relationship in order to understand and capture their requirements by creating/updating a series of documentation.
+                  </li>
+                  <li>
+                    Conduct requirement gathering meetings to determine scope definition.
+                  </li>
+                  <li>
+                    Design enhancements to replace an enterprise's existing product.
+                  </li>
+                  <li>
+                    Develop current and future state architecture diagrams to present solutions for various technical objectives.
+                  </li>
+                  <li>
+                    Continuously acquire in-depth knowledge of technology and modern data solutions.
+                  </li>
+                </ul>
+              </section>
+              <section className="mb-5">
                 <p className="font-semibold">Poetic Systems</p>
                 <p className="font-semibold uppercase">Web Developer</p>
-                <p className="italic">Houston, TX (Mar 2021 - Present)</p>
+                <p className="italic">Houston, TX (Mar 2021 - Oct 2021)</p>
                 <ul className="pl-8 list-disc">
                   <li>
                     Completed support tickets for current Wordpress, Webflow,
                     and Drupal projects all across the company.
                   </li>
                   <li>
-                    Developed/refactored features to the Camden website and
-                    Houston Food Bank’s project management website that improved
-                    user performance and experience.
+                    Completed support tickets for current Full Stack Web Applications all across the company.
                   </li>
                   <li>
-                    Implemented accessibility features to Camden’s website to
-                    ensure ADA compliance.
+                    Developed/refactored features to the clients’ websites that improved user performance and experience.
+                  </li>
+                  <li>
+                    Implemented accessibility features to client’s website to ensure ADA compliance.
                   </li>
                   <li>
                     Communicated effectively and worked collaboratively with
@@ -120,7 +147,7 @@ export default function Resume() {
                 <p className="font-semibold uppercase">
                   Full Stack Web Development Bootcamp Tutor
                 </p>
-                <p className="italic">Houston, TX (Jan 2021 - Present)</p>
+                <p className="italic">Houston, TX (Jan 2021 - Oct 2021)</p>
                 <ul className="pl-8 list-disc">
                   <li>
                     Assist current students with their studies and projects.
