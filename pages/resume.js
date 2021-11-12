@@ -57,8 +57,8 @@ export default function Resume() {
                 <li>CSS</li>
                 <li>Javascript</li>
                 <li>Typescript</li>
-                <li>Python</li>
-                <li>PHP</li>
+                {/* <li>Python</li>
+                <li>PHP</li> */}
               </ul>
               <ul className="mt-5">
                 <li className="font-semibold uppercase">Front-End Tools</li>
@@ -66,7 +66,7 @@ export default function Resume() {
                 <li>React</li>
                 <li>NextJS</li>
                 <li>Angular</li>
-                <li>Redux</li>
+                {/* <li>Redux</li> */}
                 <li>Web APIs</li>
                 <li>Apollo</li>
               </ul>
