@@ -50,7 +50,7 @@ export default function WorkPage({
                   className="ml-4 text-3xl md:transition md:duration-200 md:ease-in-out fab fa-github-square text-coolBlue md:hover:text-goldenrod"
                   tabIndex={0}
                   onKeyDown={(e) => {
-                    if (e.key === "Enter" || "") {
+                    if (e.key === "Enter" || e.key === " ") {
                       const page = github;
                       window.location.href = page;
                     }
@@ -62,7 +62,7 @@ export default function WorkPage({
                   className="ml-2 text-3xl md:transition md:duration-200 md:ease-in-out fas fa-external-link-square-alt text-coolBlue md:hover:text-goldenrod"
                   tabIndex={0}
                   onKeyDown={(e) => {
-                    if (e.key === "Enter" || "") {
+                    if (e.key === "Enter" || e.key === " ") {
                       const page = live_url;
                       window.location.href = page;
                     }

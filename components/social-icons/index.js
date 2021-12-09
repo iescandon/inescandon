@@ -12,7 +12,7 @@ export default function SocialIcons() {
             className="transition duration-200 ease-in-out fab fa-github-square text-coolBlue lg:hover:text-goldenrod"
             tabIndex={0}
             onKeyDown={(e) => {
-              if (e.key === "Enter" || "") {
+              if (e.key === "Enter" || e.key === " ") {
                 window.location.href = "https://github.com/iescandon";
               }
             }}
@@ -30,7 +30,7 @@ export default function SocialIcons() {
             className="transition duration-200 ease-in-out fab fa-linkedin text-coolBlue lg:hover:text-goldenrod"
             tabIndex={0}
             onKeyDown={(e) => {
-              if (e.key === "Enter" || "") {
+              if (e.key === "Enter" || e.key === " ") {
                 window.location.href = "https://www.linkedin.com/in/iescandon/";
               }
             }}
@@ -48,7 +48,7 @@ export default function SocialIcons() {
             className="transition duration-200 ease-in-out fab fa-instagram-square text-coolBlue lg:hover:text-goldenrod"
             tabIndex={0}
             onKeyDown={(e) => {
-              if (e.key === "Enter" || "") {
+              if (e.key === "Enter" || e.key === " ") {
                 window.location.href = "https://www.instagram.com/inescandon/";
               }
             }}

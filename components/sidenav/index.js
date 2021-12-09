@@ -27,7 +27,7 @@ export default function SideNav({ selectedSection }) {
           width="50px;"
           tabIndex={0}
           onKeyDown={(e) => {
-            if (e.key === "Enter" || "") {
+            if (e.key === "Enter" || e.key === " ") {
               window.location.href = "/";
             }
           }}
@@ -40,7 +40,7 @@ export default function SideNav({ selectedSection }) {
           alt="hispanic girl with curly hair and small yorkie dog"
           tabIndex={0}
           onKeyDown={(e) => {
-            if (e.key === "Enter" || "") {
+            if (e.key === "Enter" || e.key === " ") {
               window.location.href = "/";
             }
           }}
@@ -67,7 +67,7 @@ export default function SideNav({ selectedSection }) {
                 }`}
                 key={item.slug}
                 onKeyDown={(e) => {
-                  if (e.key === "Enter" || "") {
+                  if (e.key === "Enter" || e.key === " ") {
                     window.location.href = `/${item.slug}`;
                   }
                 }}
