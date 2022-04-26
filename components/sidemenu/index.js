@@ -16,7 +16,7 @@ export default function SideMenu({
               <li className={`px-1 md:px-2 menu-item w-full pb-6 lg:pb-0 ${i % 2 ? "pl-3" : "pr-3"}`} key={item.title}>
                 <img
                   key={item.slug}
-                  className={`menu-image flex flex-row cursor-pointer rounded-md shadow-lg h-full object-cover ${
+                  className={`menu-image flex flex-row cursor-pointer rounded-md shadow-lg lg:h-full object-cover ${
                     i === selectedProjectIndex
                       ? "border-2 border-goldenrod"
                       : "border border-platinum"
