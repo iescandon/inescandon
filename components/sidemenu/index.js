@@ -8,15 +8,15 @@ export default function SideMenu({
 }) {
   return (
     <div className="">
-      <ul className="flex flex-row justify-center w-full mb-5 lg:mb-0">
+      <ul className="grid grid-cols-2 lg:flex lg:flex-row mb-5 lg:mb-0">
         {work.map((item, i) => {
           // if(i !== selectedProjectIndex) {
           return (
             <Link href={`/work/${item.slug}`} key={item.title}>
-              <li className="mx-1 md:mx-2 menu-item" key={item.title}>
+              <li className={`px-1 md:px-2 menu-item w-full pb-6 lg:pb-0 ${i % 2 ? "pl-3" : "pr-3"}`} key={item.title}>
                 <img
                   key={item.slug}
-                  className={`menu-image flex flex-row cursor-pointer rounded-md shadow-lg ${
+                  className={`menu-image flex flex-row cursor-pointer rounded-md shadow-lg h-full object-cover ${
                     i === selectedProjectIndex
                       ? "border-2 border-goldenrod"
                       : "border border-platinum"

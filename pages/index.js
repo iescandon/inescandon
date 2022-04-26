@@ -34,7 +34,7 @@ export default function Home() {
               <span className="pr-1 text-5xl font-medium font-dawningOfaNewDay">
                 Inez
               </span>
-              . I'm a Full Stack Web Developer based out of Houston, TX.{" "}
+              . I&apos;m a Full Stack Web Developer based out of Houston, TX.{" "}
               <img
                 src="/images/texas.webp"
                 alt="texas icon"

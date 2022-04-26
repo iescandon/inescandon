@@ -107,7 +107,7 @@ export default function Resume() {
                     Conduct requirement gathering meetings to determine scope definition.
                   </li>
                   <li>
-                    Design enhancements to replace an enterprise's existing product.
+                    Design enhancements to replace an enterprise&apos;s existing product.
                   </li>
                   <li>
                     Develop current and future state architecture diagrams to present solutions for various technical objectives.
